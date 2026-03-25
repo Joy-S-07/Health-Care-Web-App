@@ -1,0 +1,5 @@
+Flask
+flask-cors
+numpy
+pandas
+# Add your ML dependencies here e.g., scikit-learn, joblib
