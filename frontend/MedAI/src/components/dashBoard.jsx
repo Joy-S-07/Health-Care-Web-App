@@ -105,20 +105,8 @@ const DashBoard = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      {/* Navigation */}
-      <header className="w-full bg-white shadow-sm border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center gap-2 text-slate-900 group cursor-pointer">
-          <HeartPulseIcon className="w-8 h-8 text-rose-500 group-hover:scale-110 transition-transform" />
-          <span className="text-2xl font-extrabold tracking-tight">MedAI</span>
-        </div>
-        <div className="flex items-center gap-4">
-           {/* Login Link */}
-           <Link to="/login" className="px-5 py-2.5 bg-slate-900 text-white rounded-lg font-bold hover:bg-slate-800 transition-all shadow-md active:scale-95">
-             Sign In
-           </Link>
-        </div>
-      </header>
+    <div className="flex-1 flex flex-col w-full">
+
 
       {/* Main Content Area */}
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">

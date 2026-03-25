@@ -88,19 +88,8 @@ const SymtptomChecker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      {/* Header */}
-      <header className="w-full bg-white shadow-sm border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-        <div className="flex items-center gap-4">
-          <Link to="/" className="p-2 rounded-full hover:bg-slate-100 text-slate-500 hover:text-slate-900 transition-colors">
-            <ArrowLeftIcon className="w-6 h-6" />
-          </Link>
-          <div className="flex items-center gap-2 text-slate-900">
-            <ActivityIcon className="w-6 h-6 text-blue-500" />
-            <span className="text-xl font-bold tracking-tight">AI Diagnostic</span>
-          </div>
-        </div>
-      </header>
+    <div className="flex-1 flex flex-col w-full">
+
 
       {/* Main Content Area */}
       <main className="flex-1 w-full max-w-4xl mx-auto px-4 py-8 md:py-12">
