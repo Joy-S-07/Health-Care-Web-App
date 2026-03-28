@@ -25,6 +25,13 @@ svc_model = None
 label_encoder = None
 symptoms_dict = {}
 diseases_dict = {}
+
+# Diabetes & Parkinsons
+diabetes_model = None
+diabetes_scaler = None
+parkinsons_model = None
+parkinsons_scaler = None
+
 description_df = None
 precautions_df = None
 medications_df = None
@@ -36,15 +43,22 @@ hospital_df = None
 def load_models():
     """Load pre-trained .pkl models and CSV reference data."""
     global svc_model, label_encoder, symptoms_dict, diseases_dict
+    global diabetes_model, diabetes_scaler, parkinsons_model, parkinsons_scaler
     global description_df, precautions_df, medications_df, diets_df, workout_df, hospital_df
 
     print("⏳ Loading pre-trained models from .pkl files...")
 
     # ── Load .pkl models ──
     svc_model = pickle.load(open(os.path.join(MODEL_DIR, 'svc.pkl'), 'rb'))
-    label_encoder = pickle.load(open(os.path.join(MODEL_DIR, 'label_encoder.pkl'), 'rb'))
+    # No label_encoder.pkl used directly anymore, relying purely on notebook dictionaries
     symptoms_dict = pickle.load(open(os.path.join(MODEL_DIR, 'symptoms_dict.pkl'), 'rb'))
     diseases_dict = pickle.load(open(os.path.join(MODEL_DIR, 'diseases_dict.pkl'), 'rb'))
+    
+    diabetes_model = pickle.load(open(os.path.join(MODEL_DIR, 'diabetes_model.pkl'), 'rb'))
+    diabetes_scaler = pickle.load(open(os.path.join(MODEL_DIR, 'diabetes_scaler.pkl'), 'rb'))
+    
+    parkinsons_model = pickle.load(open(os.path.join(MODEL_DIR, 'parkinsons_model.pkl'), 'rb'))
+    parkinsons_scaler = pickle.load(open(os.path.join(MODEL_DIR, 'parkinsons_scaler.pkl'), 'rb'))
 
     print(f"   ✅ SVC model loaded — {len(symptoms_dict)} symptoms, {len(diseases_dict)} diseases")
 
@@ -113,24 +127,33 @@ def get_disease_info(disease_name):
 
 
 def predict_disease(patient_symptoms):
-    """Predict disease from a list of symptom strings."""
+    """Predict disease strictly matching logic from .ipynb."""
     input_vector = np.zeros(len(symptoms_dict))
     matched = []
     unmatched = []
 
+    # Format user symptoms exactly as done in the notebook
+    # user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
     for symptom in patient_symptoms:
-        clean = symptom.strip().lower().replace(' ', '_')
-        if clean in symptoms_dict:
+        # Notebook logic sometimes passes raw strings, we try both clean and raw logic
+        orig = symptom.strip("[]' ")
+        clean = orig.lower().replace(' ', '_')
+        
+        if orig in symptoms_dict:
+            input_vector[symptoms_dict[orig]] = 1
+            matched.append(orig)
+        elif clean in symptoms_dict:
             input_vector[symptoms_dict[clean]] = 1
             matched.append(clean)
         else:
-            unmatched.append(symptom.strip())
+            unmatched.append(orig)
 
     if not matched:
         return None, matched, unmatched
 
-    prediction = svc_model.predict([input_vector])[0]
-    disease_name = diseases_dict.get(prediction, "Unknown")
+    # The diseases list in ipynb handles prediction result
+    prediction_index = svc_model.predict([input_vector])[0]
+    disease_name = diseases_dict.get(prediction_index, "Unknown")
     return disease_name, matched, unmatched
 
 
@@ -182,6 +205,63 @@ def get_symptoms():
     """Return list of all valid symptom names."""
     return jsonify({
         'symptoms': sorted(list(symptoms_dict.keys()))
+    })
+
+
+@app.route('/predict-diabetes', methods=['POST'])
+def predict_diabetes():
+    """
+    Predict diabetes from features.
+    Required features: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+    Expects json like: {"features": [5, 166, 72, 19, 175, 25.8, 0.587, 51]}
+    """
+    data = request.get_json()
+    if not data or 'features' not in data:
+        return jsonify({'error': 'Please provide the exactly 8 features'}), 400
+    
+    features = data['features']
+    if len(features) != 8:
+        return jsonify({'error': f'Expected 8 features, got {len(features)}'}), 400
+        
+    input_data_as_numpy_array = np.asarray(features)
+    input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
+    
+    std_data = diabetes_scaler.transform(input_data_reshaped)
+    prediction = diabetes_model.predict(std_data)
+    
+    is_diabetic = bool(prediction[0] != 0)
+    return jsonify({
+        'disease': 'Diabetes',
+        'is_diabetic': is_diabetic,
+        'prediction_text': 'The person is diabetic' if is_diabetic else 'The person is not diabetic'
+    })
+
+
+@app.route('/predict-parkinsons', methods=['POST'])
+def predict_parkinsons():
+    """
+    Predict Parkinson's from features.
+    Expects json like: {"features": [197.076, 206.896, ...]} (22 features total)
+    """
+    data = request.get_json()
+    if not data or 'features' not in data:
+        return jsonify({'error': 'Please provide the exactly 22 features'}), 400
+    
+    features = data['features']
+    if len(features) != 22:
+        return jsonify({'error': f'Expected 22 features, got {len(features)}'}), 400
+        
+    input_data_as_numpy_array = np.asarray(features)
+    input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
+    
+    std_data = parkinsons_scaler.transform(input_data_reshaped)
+    prediction = parkinsons_model.predict(std_data)
+    
+    has_parkinsons = bool(prediction[0] != 0)
+    return jsonify({
+        'disease': 'Parkinsons',
+        'has_parkinsons': has_parkinsons,
+        'prediction_text': 'The Person has Parkinsons' if has_parkinsons else 'The Person does not have Parkinsons Disease'
     })
 
 
