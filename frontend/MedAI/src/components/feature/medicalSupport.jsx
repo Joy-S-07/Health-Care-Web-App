@@ -16,13 +16,6 @@ const PillIcon = ({ className }) => (
   </svg>
 );
 
-const ArrowLeftIcon = ({ className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <line x1="19" y1="12" x2="5" y2="12"></line>
-    <polyline points="12 19 5 12 12 5"></polyline>
-  </svg>
-);
-
 const StethoscopeIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"></path>
@@ -46,49 +39,7 @@ const ShieldCheckIcon = ({ className }) => (
   </svg>
 );
 
-// Medical Database for safely matching symptoms
-const MEDICAL_DATABASE = [
-  {
-    keywords: ["headache", "migraine", "head", "pain"],
-    medicines: [
-      { name: "Acetaminophen (Paracetamol)", dosage: "500mg as needed, every 4-6 hours", type: "Pain Reliever", safety: "Over-the-counter. Do not exceed 4000mg per day." },
-      { name: "Ibuprofen", dosage: "200-400mg every 4-6 hours", type: "NSAID", safety: "Over-the-counter. Take with food to avoid stomach upset." }
-    ],
-    specialties: ["General Physician", "Neurologist (if persistent or severe)"]
-  },
-  {
-    keywords: ["fever", "temperature", "hot", "chills"],
-    medicines: [
-      { name: "Acetaminophen (Paracetamol)", dosage: "500mg every 4-6 hours", type: "Antipyretic", safety: "Over-the-counter. Excellent for reducing fever safely." },
-      { name: "Ibuprofen", dosage: "200-400mg every 4-6 hours", type: "NSAID / Antipyretic", safety: "Over-the-counter. Helps reduce fever and muscle aches." }
-    ],
-    specialties: ["General Physician", "Infectious Disease Specialist (if prolonged)"]
-  },
-  {
-    keywords: ["cough", "throat", "phlegm", "cold", "congestion"],
-    medicines: [
-      { name: "Dextromethorphan", dosage: "10-20mg every 4 hours", type: "Cough Suppressant", safety: "Over-the-counter. Best for dry, hacking coughs to soothe the throat reflex." },
-      { name: "Guaifenesin", dosage: "200-400mg every 4 hours", type: "Expectorant", safety: "Over-the-counter. Best for clearing chest congestion. Must drink plenty of water." }
-    ],
-    specialties: ["General Physician", "Pulmonologist", "ENT Specialist"]
-  },
-  {
-    keywords: ["allergy", "sneezing", "itchy", "eyes", "rash"],
-    medicines: [
-      { name: "Cetirizine (Zyrtec)", dosage: "10mg once daily", type: "Antihistamine", safety: "Over-the-counter. Highly effective non-drowsy allergy relief." },
-      { name: "Diphenhydramine (Benadryl)", dosage: "25-50mg every 4-6 hours", type: "Fast-acting Antihistamine", safety: "Over-the-counter. May cause significant drowsiness. Do not drive after use." }
-    ],
-    specialties: ["Allergist / Immunologist", "Dermatologist (for rash)"]
-  },
-  {
-    keywords: ["stomach", "pain", "acid", "heartburn", "nausea"],
-    medicines: [
-      { name: "Calcium Carbonate (Tums)", dosage: "Chew 2-4 tablets as symptoms occur", type: "Antacid", safety: "Over-the-counter. For quick relief of mild, occasional heartburn." },
-      { name: "Bismuth Subsalicylate (Pepto-Bismol)", dosage: "30ml or 2 caplets every hour as needed", type: "Antidiarrheal/Antacid", safety: "Over-the-counter. Helps soothe stomach lining. Do not take with aspirin." }
-    ],
-    specialties: ["Gastroenterologist", "General Physician"]
-  }
-];
+const API_FLASK = 'http://localhost:4000/api/flask';
 
 const MedicalSupport = () => {
   const location = useLocation();
@@ -97,43 +48,46 @@ const MedicalSupport = () => {
   const [symptoms, setSymptoms] = useState(initialSymptom);
   const [isSearching, setIsSearching] = useState(false);
   const [results, setResults] = useState(null);
+  const [error, setError] = useState("");
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (!symptoms.trim()) return;
 
     setIsSearching(true);
     setResults(null);
+    setError("");
 
-    // Simulate database query delay
-    setTimeout(() => {
-      const queryWords = symptoms.toLowerCase().split(/[,\s]+/);
-      
-      const matchedData = MEDICAL_DATABASE.filter(entry => 
-        queryWords.some(word => word.length > 2 && entry.keywords.some(kw => kw.includes(word) || word.includes(kw)))
-      );
+    try {
+      const response = await fetch(`${API_FLASK}/predict`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ symptoms }),
+      });
 
-      // Default safe suggestion if no matches occur
-      const fallbackData = [{
-        keywords: ["general"],
-        medicines: [],
-        specialties: ["General Physician"]
-      }];
+      const data = await response.json();
 
-      setResults(matchedData.length > 0 ? matchedData : fallbackData);
+      if (!response.ok) {
+        setError(data.error || 'Could not analyze symptoms.');
+        return;
+      }
+
+      setResults(data);
+    } catch (err) {
+      setError('Could not connect to the AI service. Make sure the Flask server is running.');
+    } finally {
       setIsSearching(false);
-    }, 1500);
+    }
   };
 
   return (
     <div className="flex-1 flex flex-col w-full">
-
 
       {/* Main Content Area */}
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 md:py-12">
         <div className="mb-8 text-center">
             <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Safe Medication Guidance</h1>
             <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto">
-              Describe your symptoms below to get over-the-counter medical suggestions and know which doctor to consult.
+              Enter your symptoms below to get AI-powered medication suggestions, diet recommendations, and specialist guidance.
             </p>
         </div>
 
@@ -148,7 +102,7 @@ const MedicalSupport = () => {
                 type="text"
                 value={symptoms}
                 onChange={(e) => setSymptoms(e.target.value)}
-                placeholder="E.g. Fever, persistent cough, bad headache..."
+                placeholder="E.g. headache, high_fever, nausea..."
                 className="w-full pl-12 pr-4 py-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 font-bold focus:outline-none focus:ring-2 focus:ring-violet-500 focus:bg-white transition-all duration-200"
               />
             </div>
@@ -169,6 +123,7 @@ const MedicalSupport = () => {
               )}
             </button>
           </div>
+          <p className="text-xs text-slate-400 mt-3 ml-1">Use underscores for multi-word symptoms (e.g. skin_rash, chest_pain)</p>
         </div>
 
         {/* High Priority Medical Disclaimer */}
@@ -177,92 +132,106 @@ const MedicalSupport = () => {
             <div>
               <h4 className="font-bold text-rose-900">Important Medical Disclaimer</h4>
               <p className="text-rose-800 text-sm mt-1 leading-relaxed">
-                The medications listed here are solely for informational purposes and consist of common Over-The-Counter (OTC) drugs. 
-                They do not constitute professional medical advice, diagnosis, or treatment. Always read medicine labels carefully and consult with your doctor or pharmacist before taking any new medication, especially if you have pre-existing conditions or are pregnant.
+                The medications listed here are AI-generated suggestions for informational purposes only. 
+                They do not constitute professional medical advice, diagnosis, or treatment. Always consult with your doctor or pharmacist before taking any new medication.
               </p>
             </div>
         </div>
 
+        {/* Error */}
+        {error && (
+          <div className="bg-rose-50 border border-rose-200 rounded-2xl p-5 mb-10 text-sm text-rose-800 font-medium flex items-start gap-3 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <AlertTriangleIcon className="w-5 h-5 shrink-0 text-rose-500 mt-0.5" />
+            <p>{error}</p>
+          </div>
+        )}
+
         {/* Results Section */}
         {results && (
           <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out space-y-8">
-            <h2 className="text-2xl font-bold text-slate-900 tracking-tight pl-2">Medical Suggestions</h2>
+            <h2 className="text-2xl font-bold text-slate-900 tracking-tight pl-2">
+              AI Medical Suggestions for <span className="text-violet-600">{results.disease}</span>
+            </h2>
+            <p className="text-slate-600 font-medium pl-2 -mt-4">{results.description}</p>
             
-            {results.map((resultGroup, idx) => (
-              <div key={idx} className="space-y-6">
-                 
-                {/* Medicines List */}
-                {resultGroup.medicines.length > 0 ? (
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    {resultGroup.medicines.map((med, midx) => (
-                      <div key={midx} className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-sm hover:shadow-xl hover:border-violet-200 hover:-translate-y-1 transition-all duration-300">
-                        <div className="flex items-start justify-between mb-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center border border-violet-100">
-                              <PillIcon className="w-6 h-6" />
-                            </div>
-                            <div>
-                              <h3 className="font-bold text-xl text-slate-900">{med.name}</h3>
-                              <span className="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md mt-1">
-                                {med.type}
-                              </span>
-                            </div>
-                          </div>
+            {/* Medications */}
+            {results.medications?.length > 0 && (
+              <div>
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider ml-1 mb-4">Suggested Medications</h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {results.medications.map((med, midx) => (
+                    <div key={midx} className="bg-white rounded-3xl p-6 border-2 border-slate-100 shadow-sm hover:shadow-xl hover:border-violet-200 hover:-translate-y-1 transition-all duration-300">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-12 h-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center border border-violet-100">
+                          <PillIcon className="w-6 h-6" />
                         </div>
-                        
-                        <div className="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                          <div>
-                            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Standard Dosage</p>
-                            <p className="text-slate-800 font-medium text-sm">{med.dosage}</p>
-                          </div>
-                          <div>
-                            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Safety Notes</p>
-                            <p className="text-slate-700 font-medium text-sm flex items-start gap-1.5 line-clamp-2">
-                              <ShieldCheckIcon className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                              {med.safety}
-                            </p>
-                          </div>
+                        <div>
+                          <h3 className="font-bold text-lg text-slate-900">{med}</h3>
+                          <span className="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md mt-1">
+                            AI Suggested
+                          </span>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="bg-white rounded-2xl p-6 border border-slate-200 text-center text-slate-600 font-medium">
-                    We couldn't clearly match your symptoms with safe over-the-counter medicine. Please see the doctor recommendations below.
-                  </div>
-                )}
-
-                {/* Highly Recommended Doctors */}
-                <div className="bg-white rounded-3xl p-6 border border-emerald-100 shadow-sm shadow-emerald-100/50">
-                   <h3 className="flex items-center gap-2 font-bold text-emerald-800 mb-4">
-                     <StethoscopeIcon className="w-5 h-5 text-emerald-500" />
-                     Recommended Specialist Consultation
-                   </h3>
-                   <div className="flex flex-wrap gap-3">
-                     {resultGroup.specialties.map((spec, sidx) => (
-                       <div key={sidx} className="bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-2.5 rounded-xl font-bold text-sm">
-                         {spec}
-                       </div>
-                     ))}
-                   </div>
-                   
-                   <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center justify-between border-t border-emerald-100 pt-6">
-                     <p className="text-sm font-medium text-slate-600">
-                       Medication only masks symptoms. Finding the root cause is crucial.
-                     </p>
-                     <Link 
-                       to="/find-doctor" 
-                       state={{ symptom: symptoms }}
-                       className="px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm hover:bg-emerald-700 transition-all shadow-md flex items-center gap-2 active:scale-95"
-                     >
-                       Find these Doctors Near You
-                     </Link>
-                   </div>
+                      <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <p className="text-sm font-medium text-slate-700 flex items-start gap-1.5">
+                          <ShieldCheckIcon className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                          Consult your doctor for proper dosage and suitability.
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-
               </div>
-            ))}
-            
+            )}
+
+            {/* Diets */}
+            {results.diets?.length > 0 && (
+              <div>
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider ml-1 mb-4">Recommended Diet</h3>
+                <div className="flex flex-wrap gap-3">
+                  {results.diets.map((d, i) => (
+                    <span key={i} className="px-4 py-2.5 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl font-bold text-sm">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Workouts */}
+            {results.workouts?.length > 0 && (
+              <div>
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider ml-1 mb-4">Suggested Activities</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {results.workouts.map((w, i) => (
+                    <div key={i} className="bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-sm font-medium text-slate-800 flex items-start gap-2">
+                      <span className="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">{i + 1}</span>
+                      {w}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Doctor link */}
+            <div className="bg-white rounded-3xl p-6 border border-emerald-100 shadow-sm shadow-emerald-100/50">
+               <h3 className="flex items-center gap-2 font-bold text-emerald-800 mb-4">
+                 <StethoscopeIcon className="w-5 h-5 text-emerald-500" />
+                 Need Professional Help?
+               </h3>
+               <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                 <p className="text-sm font-medium text-slate-600">
+                   Medication only masks symptoms. Finding the root cause with a specialist is crucial.
+                 </p>
+                 <Link 
+                   to="/find-doctor" 
+                   state={{ symptom: symptoms, disease: results.disease }}
+                   className="px-6 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm hover:bg-emerald-700 transition-all shadow-md flex items-center gap-2 active:scale-95 whitespace-nowrap"
+                 >
+                   Find Doctors Near You
+                 </Link>
+               </div>
+            </div>
           </div>
         )}
       </main>

@@ -1,0 +1,1001 @@
+Hospital_Name,Disease,Specialty,Doctor_Name,Latitude,Longitude
+City Hospital 1,Migraine,Neurologist,Dr. Ravi Kumar,11.278582,69.207327
+Medico Hospital 2,Eye Infection,Ophthalmologist,Dr. Sneha Das,25.694788,75.633986
+LifeCare Hospital 3,Diabetes,Endocrinologist,Dr. Anjali Kumar,16.242352,93.814659
+Sunrise Hospital 4,Kidney Stone,Nephrologist,Dr. Sneha Verma,21.212226,73.724462
+CarePlus Hospital 5,Skin Allergy,Dermatologist,Dr. Amit Das,32.875132,95.975188
+Apollo Hospital 6,Arthritis,Orthopedic,Dr. Sneha Gupta,25.609876,96.535501
+City Hospital 7,Asthma,Pulmonologist,Dr. Priya Mishra,15.687843,80.880816
+Apollo Hospital 8,Dengue,General Physician,Dr. Anjali Mishra,32.104587,69.973969
+Apollo Hospital 9,Heart Attack,Cardiologist,Dr. Pooja Gupta,12.465624,78.409394
+LifeCare Hospital 10,Skin Allergy,Dermatologist,Dr. Anjali Sharma,17.586388,84.385011
+Global Hospital 11,Kidney Stone,Nephrologist,Dr. Amit Verma,25.634861,79.76508
+Medico Hospital 12,Kidney Stone,Nephrologist,Dr. Ravi Yadav,15.81383,94.776188
+Medico Hospital 13,Diabetes,Endocrinologist,Dr. Ravi Kumar,20.587651,89.381462
+Apollo Hospital 14,Diabetes,Endocrinologist,Dr. Vikas Verma,32.022299,78.493034
+Medico Hospital 15,Heart Attack,Cardiologist,Dr. Neha Verma,29.551396,79.305137
+City Hospital 16,Migraine,Neurologist,Dr. Anjali Sharma,32.564167,82.566248
+City Hospital 17,Kidney Stone,Nephrologist,Dr. Ravi Gupta,24.193089,79.393833
+CarePlus Hospital 18,Asthma,Pulmonologist,Dr. Sneha Gupta,13.510005,69.941245
+Sunrise Hospital 19,Skin Allergy,Dermatologist,Dr. Karan Das,27.720341,92.94988
+Global Hospital 20,Dengue,General Physician,Dr. Karan Kumar,26.507963,77.685693
+Apollo Hospital 21,Dengue,General Physician,Dr. Ravi Yadav,25.132053,90.405435
+Global Hospital 22,Dengue,General Physician,Dr. Vikas Kumar,30.376149,81.975471
+Sunrise Hospital 23,Heart Attack,Cardiologist,Dr. Ravi Kumar,34.379712,88.786313
+CarePlus Hospital 24,Migraine,Neurologist,Dr. Vikas Verma,28.390346,95.043969
+Sunrise Hospital 25,Arthritis,Orthopedic,Dr. Ravi Kumar,27.867699,73.415717
+Global Hospital 26,Skin Allergy,Dermatologist,Dr. Rahul Mishra,24.061543,86.971885
+Sunrise Hospital 27,Eye Infection,Ophthalmologist,Dr. Anjali Verma,35.419226,93.775239
+Sunrise Hospital 28,Arthritis,Orthopedic,Dr. Vikas Das,24.670885,69.235517
+CarePlus Hospital 29,Asthma,Pulmonologist,Dr. Rahul Singh,28.421187,71.565666
+City Hospital 30,Skin Allergy,Dermatologist,Dr. Priya Gupta,8.729713,87.443588
+Sunrise Hospital 31,Pregnancy Care,Gynecologist,Dr. Ravi Verma,32.447776,81.58183
+LifeCare Hospital 32,Eye Infection,Ophthalmologist,Dr. Amit Mishra,13.058648,70.28773
+CarePlus Hospital 33,Kidney Stone,Nephrologist,Dr. Vikas Kumar,18.817784,86.22481
+LifeCare Hospital 34,Heart Attack,Cardiologist,Dr. Vikas Verma,26.810033,90.462789
+CarePlus Hospital 35,Dengue,General Physician,Dr. Pooja Das,10.672617,87.198488
+CarePlus Hospital 36,Eye Infection,Ophthalmologist,Dr. Karan Sharma,14.970711,87.275488
+Apollo Hospital 37,Arthritis,Orthopedic,Dr. Vikas Verma,36.185308,72.306946
+Medico Hospital 38,Heart Attack,Cardiologist,Dr. Ravi Verma,14.30683,81.180974
+Global Hospital 39,Arthritis,Orthopedic,Dr. Pooja Gupta,30.060358,95.502282
+CarePlus Hospital 40,Pregnancy Care,Gynecologist,Dr. Priya Kumar,35.335013,70.743297
+Apollo Hospital 41,Dengue,General Physician,Dr. Rahul Das,9.678524,68.026814
+Medico Hospital 42,Eye Infection,Ophthalmologist,Dr. Sneha Singh,21.011384,74.846718
+LifeCare Hospital 43,Dengue,General Physician,Dr. Sneha Singh,12.692204,91.215044
+CarePlus Hospital 44,Eye Infection,Ophthalmologist,Dr. Amit Mishra,33.565272,88.047393
+Sunrise Hospital 45,Skin Allergy,Dermatologist,Dr. Ravi Sharma,32.450608,81.979421
+City Hospital 46,Heart Attack,Cardiologist,Dr. Vikas Sharma,24.059984,96.96194
+City Hospital 47,Pregnancy Care,Gynecologist,Dr. Pooja Kumar,8.688882,77.464155
+City Hospital 48,Dengue,General Physician,Dr. Neha Sharma,17.54981,94.312164
+LifeCare Hospital 49,Arthritis,Orthopedic,Dr. Vikas Yadav,23.170774,80.497795
+CarePlus Hospital 50,Pregnancy Care,Gynecologist,Dr. Sneha Kumar,33.47892,78.617271
+LifeCare Hospital 51,Skin Allergy,Dermatologist,Dr. Vikas Das,25.045054,91.197353
+CarePlus Hospital 52,Arthritis,Orthopedic,Dr. Neha Gupta,32.909127,79.180529
+Medico Hospital 53,Eye Infection,Ophthalmologist,Dr. Sneha Gupta,30.749945,82.683625
+Global Hospital 54,Dengue,General Physician,Dr. Neha Verma,21.968408,85.782771
+Sunrise Hospital 55,Pregnancy Care,Gynecologist,Dr. Pooja Yadav,30.83071,73.982066
+Sunrise Hospital 56,Arthritis,Orthopedic,Dr. Pooja Yadav,15.854576,85.401693
+City Hospital 57,Pregnancy Care,Gynecologist,Dr. Sneha Verma,28.058619,77.272634
+City Hospital 58,Migraine,Neurologist,Dr. Vikas Sharma,14.497258,75.067397
+City Hospital 59,Pregnancy Care,Gynecologist,Dr. Vikas Yadav,30.112154,88.160318
+Apollo Hospital 60,Dengue,General Physician,Dr. Rahul Sharma,33.280715,82.511644
+Global Hospital 61,Pregnancy Care,Gynecologist,Dr. Neha Verma,18.633643,83.983573
+Sunrise Hospital 62,Diabetes,Endocrinologist,Dr. Anjali Yadav,24.102314,69.804654
+LifeCare Hospital 63,Dengue,General Physician,Dr. Amit Kumar,25.833097,93.06437
+City Hospital 64,Asthma,Pulmonologist,Dr. Pooja Mishra,26.11225,73.944852
+Sunrise Hospital 65,Pregnancy Care,Gynecologist,Dr. Anjali Verma,11.371191,87.239198
+Global Hospital 66,Heart Attack,Cardiologist,Dr. Pooja Singh,12.447344,86.124551
+Medico Hospital 67,Heart Attack,Cardiologist,Dr. Neha Das,35.008773,80.235445
+Sunrise Hospital 68,Asthma,Pulmonologist,Dr. Rahul Kumar,34.260509,76.150447
+LifeCare Hospital 69,Kidney Stone,Nephrologist,Dr. Neha Das,10.128117,70.258861
+CarePlus Hospital 70,Asthma,Pulmonologist,Dr. Karan Gupta,35.628487,82.711354
+City Hospital 71,Skin Allergy,Dermatologist,Dr. Sneha Singh,31.521017,87.898912
+Sunrise Hospital 72,Skin Allergy,Dermatologist,Dr. Anjali Mishra,12.27409,92.477718
+Medico Hospital 73,Skin Allergy,Dermatologist,Dr. Karan Kumar,16.296976,71.354111
+LifeCare Hospital 74,Diabetes,Endocrinologist,Dr. Rahul Yadav,29.813204,70.184245
+Global Hospital 75,Heart Attack,Cardiologist,Dr. Anjali Mishra,35.177121,68.363696
+LifeCare Hospital 76,Migraine,Neurologist,Dr. Priya Yadav,8.521098,74.64763
+Medico Hospital 77,Kidney Stone,Nephrologist,Dr. Vikas Verma,21.77285,73.979039
+LifeCare Hospital 78,Dengue,General Physician,Dr. Sneha Sharma,27.86596,82.693318
+Medico Hospital 79,Diabetes,Endocrinologist,Dr. Vikas Yadav,30.590132,73.545098
+LifeCare Hospital 80,Migraine,Neurologist,Dr. Karan Kumar,15.75424,92.279646
+Medico Hospital 81,Arthritis,Orthopedic,Dr. Ravi Verma,11.261093,69.938343
+City Hospital 82,Arthritis,Orthopedic,Dr. Vikas Das,26.03832,72.746578
+Global Hospital 83,Asthma,Pulmonologist,Dr. Karan Mishra,17.841942,80.325915
+Sunrise Hospital 84,Migraine,Neurologist,Dr. Priya Gupta,31.650317,68.510174
+Sunrise Hospital 85,Arthritis,Orthopedic,Dr. Pooja Sharma,22.599539,80.34613
+Global Hospital 86,Migraine,Neurologist,Dr. Anjali Sharma,23.771234,70.055416
+Sunrise Hospital 87,Asthma,Pulmonologist,Dr. Karan Verma,34.699929,69.252286
+Medico Hospital 88,Eye Infection,Ophthalmologist,Dr. Sneha Sharma,17.673027,77.446007
+LifeCare Hospital 89,Kidney Stone,Nephrologist,Dr. Karan Das,35.936512,76.444476
+Medico Hospital 90,Pregnancy Care,Gynecologist,Dr. Amit Gupta,20.090326,80.534274
+Medico Hospital 91,Dengue,General Physician,Dr. Pooja Singh,30.318177,75.982243
+Global Hospital 92,Diabetes,Endocrinologist,Dr. Neha Singh,32.405965,73.267942
+Apollo Hospital 93,Migraine,Neurologist,Dr. Pooja Singh,21.24708,76.126021
+LifeCare Hospital 94,Skin Allergy,Dermatologist,Dr. Karan Verma,33.900397,75.839971
+City Hospital 95,Kidney Stone,Nephrologist,Dr. Vikas Sharma,13.77245,70.035375
+CarePlus Hospital 96,Arthritis,Orthopedic,Dr. Sneha Gupta,15.581414,95.779254
+City Hospital 97,Eye Infection,Ophthalmologist,Dr. Neha Sharma,32.683416,87.733905
+Global Hospital 98,Asthma,Pulmonologist,Dr. Priya Gupta,25.691325,74.301092
+LifeCare Hospital 99,Asthma,Pulmonologist,Dr. Amit Kumar,19.721291,69.960546
+Apollo Hospital 100,Eye Infection,Ophthalmologist,Dr. Pooja Sharma,34.9106,88.40453
+Global Hospital 101,Dengue,General Physician,Dr. Pooja Kumar,21.874156,95.746508
+Medico Hospital 102,Arthritis,Orthopedic,Dr. Amit Das,34.61444,73.90718
+Apollo Hospital 103,Skin Allergy,Dermatologist,Dr. Anjali Mishra,14.575557,89.302346
+Apollo Hospital 104,Dengue,General Physician,Dr. Rahul Singh,9.571809,70.663638
+Sunrise Hospital 105,Dengue,General Physician,Dr. Amit Yadav,8.696964,71.580195
+Apollo Hospital 106,Pregnancy Care,Gynecologist,Dr. Pooja Das,10.458515,83.325682
+Medico Hospital 107,Dengue,General Physician,Dr. Karan Mishra,31.625906,92.064613
+Apollo Hospital 108,Dengue,General Physician,Dr. Ravi Sharma,22.544554,71.286641
+Apollo Hospital 109,Arthritis,Orthopedic,Dr. Karan Das,35.843623,95.493864
+City Hospital 110,Eye Infection,Ophthalmologist,Dr. Priya Kumar,15.910715,83.866606
+Global Hospital 111,Migraine,Neurologist,Dr. Ravi Das,23.54371,73.901546
+CarePlus Hospital 112,Kidney Stone,Nephrologist,Dr. Vikas Kumar,22.868872,92.46288
+CarePlus Hospital 113,Diabetes,Endocrinologist,Dr. Vikas Verma,20.126868,95.035584
+LifeCare Hospital 114,Kidney Stone,Nephrologist,Dr. Neha Singh,32.620838,93.330771
+City Hospital 115,Asthma,Pulmonologist,Dr. Rahul Singh,13.025982,68.567568
+Medico Hospital 116,Diabetes,Endocrinologist,Dr. Sneha Sharma,17.398489,74.945296
+Sunrise Hospital 117,Kidney Stone,Nephrologist,Dr. Priya Kumar,18.862569,86.241058
+CarePlus Hospital 118,Eye Infection,Ophthalmologist,Dr. Vikas Verma,14.459668,68.867216
+CarePlus Hospital 119,Migraine,Neurologist,Dr. Karan Verma,23.151639,83.97538
+Apollo Hospital 120,Asthma,Pulmonologist,Dr. Amit Mishra,11.784318,84.387701
+City Hospital 121,Eye Infection,Ophthalmologist,Dr. Ravi Das,36.420871,84.17873
+Apollo Hospital 122,Heart Attack,Cardiologist,Dr. Ravi Das,20.760806,90.718022
+Medico Hospital 123,Asthma,Pulmonologist,Dr. Sneha Sharma,11.129082,82.94997
+Global Hospital 124,Diabetes,Endocrinologist,Dr. Rahul Yadav,31.260604,70.543053
+Sunrise Hospital 125,Skin Allergy,Dermatologist,Dr. Priya Singh,12.336607,91.675513
+Medico Hospital 126,Dengue,General Physician,Dr. Sneha Singh,34.609636,69.092953
+Apollo Hospital 127,Pregnancy Care,Gynecologist,Dr. Rahul Yadav,10.840228,95.916053
+Global Hospital 128,Skin Allergy,Dermatologist,Dr. Amit Mishra,10.638219,88.943451
+City Hospital 129,Pregnancy Care,Gynecologist,Dr. Sneha Mishra,28.596679,82.311878
+Apollo Hospital 130,Eye Infection,Ophthalmologist,Dr. Karan Das,8.693767,75.21205
+Sunrise Hospital 131,Arthritis,Orthopedic,Dr. Sneha Das,14.075812,83.572632
+Sunrise Hospital 132,Pregnancy Care,Gynecologist,Dr. Pooja Gupta,18.830466,82.354278
+CarePlus Hospital 133,Pregnancy Care,Gynecologist,Dr. Sneha Kumar,13.25953,83.537352
+City Hospital 134,Diabetes,Endocrinologist,Dr. Anjali Gupta,26.063397,95.105875
+Apollo Hospital 135,Dengue,General Physician,Dr. Pooja Mishra,13.941227,68.651917
+Sunrise Hospital 136,Diabetes,Endocrinologist,Dr. Ravi Kumar,16.714695,74.449259
+CarePlus Hospital 137,Diabetes,Endocrinologist,Dr. Vikas Sharma,17.676931,93.356423
+CarePlus Hospital 138,Migraine,Neurologist,Dr. Ravi Sharma,33.78135,69.903998
+Sunrise Hospital 139,Kidney Stone,Nephrologist,Dr. Amit Yadav,18.280603,88.787801
+Apollo Hospital 140,Migraine,Neurologist,Dr. Rahul Kumar,20.430616,79.338284
+Apollo Hospital 141,Heart Attack,Cardiologist,Dr. Priya Yadav,16.889847,76.604249
+Apollo Hospital 142,Kidney Stone,Nephrologist,Dr. Sneha Kumar,23.293776,76.558203
+CarePlus Hospital 143,Kidney Stone,Nephrologist,Dr. Anjali Singh,35.846046,70.427762
+Apollo Hospital 144,Pregnancy Care,Gynecologist,Dr. Priya Verma,22.457564,89.132201
+Apollo Hospital 145,Diabetes,Endocrinologist,Dr. Priya Mishra,22.440161,72.365327
+Apollo Hospital 146,Skin Allergy,Dermatologist,Dr. Sneha Verma,25.762156,76.405809
+LifeCare Hospital 147,Migraine,Neurologist,Dr. Karan Singh,17.123164,75.074896
+Medico Hospital 148,Skin Allergy,Dermatologist,Dr. Karan Sharma,25.879728,86.728771
+Global Hospital 149,Arthritis,Orthopedic,Dr. Amit Das,27.170179,94.850782
+LifeCare Hospital 150,Pregnancy Care,Gynecologist,Dr. Priya Yadav,34.321752,87.507578
+CarePlus Hospital 151,Heart Attack,Cardiologist,Dr. Priya Yadav,16.81312,77.116276
+Apollo Hospital 152,Heart Attack,Cardiologist,Dr. Priya Verma,25.733435,77.604655
+Global Hospital 153,Arthritis,Orthopedic,Dr. Ravi Mishra,34.150428,84.40988
+City Hospital 154,Dengue,General Physician,Dr. Vikas Kumar,26.437244,95.561364
+Medico Hospital 155,Diabetes,Endocrinologist,Dr. Anjali Kumar,32.619598,94.538096
+Global Hospital 156,Migraine,Neurologist,Dr. Anjali Verma,25.497337,84.981425
+Sunrise Hospital 157,Heart Attack,Cardiologist,Dr. Amit Verma,21.942065,89.362412
+Apollo Hospital 158,Asthma,Pulmonologist,Dr. Rahul Sharma,25.579646,75.616231
+CarePlus Hospital 159,Migraine,Neurologist,Dr. Neha Singh,16.185707,88.992776
+CarePlus Hospital 160,Skin Allergy,Dermatologist,Dr. Anjali Yadav,32.066263,77.794752
+LifeCare Hospital 161,Migraine,Neurologist,Dr. Karan Yadav,21.300913,78.83174
+City Hospital 162,Migraine,Neurologist,Dr. Anjali Mishra,31.065731,79.979262
+LifeCare Hospital 163,Pregnancy Care,Gynecologist,Dr. Neha Das,12.601649,72.389344
+City Hospital 164,Diabetes,Endocrinologist,Dr. Amit Sharma,36.775282,86.057349
+Global Hospital 165,Pregnancy Care,Gynecologist,Dr. Amit Yadav,15.755097,92.453847
+LifeCare Hospital 166,Eye Infection,Ophthalmologist,Dr. Karan Sharma,36.756241,94.733775
+Medico Hospital 167,Pregnancy Care,Gynecologist,Dr. Rahul Mishra,12.682184,73.279454
+LifeCare Hospital 168,Arthritis,Orthopedic,Dr. Sneha Yadav,23.19007,90.957046
+City Hospital 169,Skin Allergy,Dermatologist,Dr. Neha Singh,18.494548,92.735533
+CarePlus Hospital 170,Asthma,Pulmonologist,Dr. Pooja Verma,23.850104,69.547895
+CarePlus Hospital 171,Heart Attack,Cardiologist,Dr. Neha Verma,14.215921,73.693915
+Sunrise Hospital 172,Eye Infection,Ophthalmologist,Dr. Karan Kumar,18.934647,68.545006
+CarePlus Hospital 173,Heart Attack,Cardiologist,Dr. Priya Singh,21.183294,92.74543
+Medico Hospital 174,Arthritis,Orthopedic,Dr. Vikas Sharma,21.587219,80.387144
+Medico Hospital 175,Kidney Stone,Nephrologist,Dr. Anjali Singh,12.859592,71.975628
+Apollo Hospital 176,Dengue,General Physician,Dr. Vikas Mishra,28.498428,81.091512
+Global Hospital 177,Skin Allergy,Dermatologist,Dr. Karan Singh,24.104287,90.019795
+CarePlus Hospital 178,Dengue,General Physician,Dr. Neha Yadav,19.159752,74.069108
+Apollo Hospital 179,Heart Attack,Cardiologist,Dr. Sneha Verma,34.700106,85.79612
+City Hospital 180,Diabetes,Endocrinologist,Dr. Priya Kumar,18.699534,69.2863
+LifeCare Hospital 181,Arthritis,Orthopedic,Dr. Neha Das,24.996547,81.45059
+LifeCare Hospital 182,Diabetes,Endocrinologist,Dr. Amit Sharma,8.777191,94.78075
+Global Hospital 183,Diabetes,Endocrinologist,Dr. Vikas Yadav,19.407728,72.665541
+Apollo Hospital 184,Skin Allergy,Dermatologist,Dr. Sneha Gupta,9.187845,95.093516
+City Hospital 185,Dengue,General Physician,Dr. Ravi Gupta,25.290621,84.501457
+CarePlus Hospital 186,Heart Attack,Cardiologist,Dr. Amit Gupta,36.919147,87.337112
+City Hospital 187,Dengue,General Physician,Dr. Priya Mishra,17.532355,89.342008
+City Hospital 188,Kidney Stone,Nephrologist,Dr. Priya Das,30.743745,85.145986
+Global Hospital 189,Migraine,Neurologist,Dr. Pooja Mishra,25.892342,77.822017
+CarePlus Hospital 190,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,36.809724,91.234741
+Medico Hospital 191,Diabetes,Endocrinologist,Dr. Ravi Verma,21.946602,74.020554
+City Hospital 192,Skin Allergy,Dermatologist,Dr. Ravi Verma,22.413345,91.508219
+City Hospital 193,Migraine,Neurologist,Dr. Karan Kumar,31.207035,86.143041
+City Hospital 194,Kidney Stone,Nephrologist,Dr. Karan Yadav,17.963969,70.360038
+Apollo Hospital 195,Migraine,Neurologist,Dr. Priya Sharma,27.462842,82.069969
+LifeCare Hospital 196,Pregnancy Care,Gynecologist,Dr. Ravi Yadav,28.777528,89.904409
+CarePlus Hospital 197,Dengue,General Physician,Dr. Anjali Das,28.766016,95.948617
+Sunrise Hospital 198,Skin Allergy,Dermatologist,Dr. Priya Mishra,22.419977,72.925209
+CarePlus Hospital 199,Eye Infection,Ophthalmologist,Dr. Sneha Mishra,22.293509,89.608894
+City Hospital 200,Kidney Stone,Nephrologist,Dr. Pooja Singh,11.857283,71.028222
+Medico Hospital 201,Arthritis,Orthopedic,Dr. Sneha Singh,19.977607,70.091026
+City Hospital 202,Arthritis,Orthopedic,Dr. Karan Gupta,9.746662,93.873798
+City Hospital 203,Eye Infection,Ophthalmologist,Dr. Karan Mishra,30.310105,88.795237
+LifeCare Hospital 204,Dengue,General Physician,Dr. Anjali Verma,36.258289,72.373457
+Global Hospital 205,Pregnancy Care,Gynecologist,Dr. Vikas Mishra,29.326067,72.360818
+Apollo Hospital 206,Pregnancy Care,Gynecologist,Dr. Sneha Mishra,8.533688,93.895779
+Medico Hospital 207,Pregnancy Care,Gynecologist,Dr. Karan Kumar,20.702854,92.870004
+City Hospital 208,Skin Allergy,Dermatologist,Dr. Vikas Kumar,21.928278,91.640473
+CarePlus Hospital 209,Asthma,Pulmonologist,Dr. Priya Das,34.848132,83.759836
+CarePlus Hospital 210,Heart Attack,Cardiologist,Dr. Vikas Mishra,17.972936,83.751455
+LifeCare Hospital 211,Migraine,Neurologist,Dr. Anjali Singh,11.350554,95.935222
+Medico Hospital 212,Dengue,General Physician,Dr. Rahul Verma,13.010263,90.087797
+LifeCare Hospital 213,Diabetes,Endocrinologist,Dr. Rahul Kumar,22.913768,89.345884
+Apollo Hospital 214,Eye Infection,Ophthalmologist,Dr. Anjali Das,20.89932,68.051193
+LifeCare Hospital 215,Diabetes,Endocrinologist,Dr. Vikas Verma,10.910284,93.913122
+Sunrise Hospital 216,Kidney Stone,Nephrologist,Dr. Vikas Verma,23.706212,73.837416
+LifeCare Hospital 217,Asthma,Pulmonologist,Dr. Anjali Yadav,29.763769,74.264286
+LifeCare Hospital 218,Asthma,Pulmonologist,Dr. Neha Mishra,11.931858,73.936177
+Sunrise Hospital 219,Eye Infection,Ophthalmologist,Dr. Priya Gupta,8.489814,68.870584
+Apollo Hospital 220,Diabetes,Endocrinologist,Dr. Neha Kumar,9.167956,71.802177
+Apollo Hospital 221,Kidney Stone,Nephrologist,Dr. Neha Mishra,30.547774,69.939169
+Sunrise Hospital 222,Skin Allergy,Dermatologist,Dr. Amit Mishra,17.392088,93.392392
+CarePlus Hospital 223,Pregnancy Care,Gynecologist,Dr. Vikas Mishra,30.10228,78.470745
+CarePlus Hospital 224,Pregnancy Care,Gynecologist,Dr. Priya Gupta,24.052975,96.310242
+City Hospital 225,Heart Attack,Cardiologist,Dr. Rahul Mishra,15.430175,89.875824
+City Hospital 226,Skin Allergy,Dermatologist,Dr. Pooja Mishra,12.024858,83.437795
+LifeCare Hospital 227,Asthma,Pulmonologist,Dr. Anjali Yadav,20.682514,82.639833
+CarePlus Hospital 228,Diabetes,Endocrinologist,Dr. Neha Verma,33.487534,87.506021
+Medico Hospital 229,Pregnancy Care,Gynecologist,Dr. Vikas Verma,26.459587,87.980242
+LifeCare Hospital 230,Heart Attack,Cardiologist,Dr. Anjali Das,31.989466,86.690008
+Apollo Hospital 231,Arthritis,Orthopedic,Dr. Neha Das,8.862672,95.286659
+Medico Hospital 232,Eye Infection,Ophthalmologist,Dr. Pooja Kumar,10.146592,70.284126
+Apollo Hospital 233,Kidney Stone,Nephrologist,Dr. Karan Singh,9.921425,71.796294
+CarePlus Hospital 234,Arthritis,Orthopedic,Dr. Karan Mishra,25.532522,68.756773
+City Hospital 235,Diabetes,Endocrinologist,Dr. Vikas Kumar,9.485066,68.41327
+Global Hospital 236,Migraine,Neurologist,Dr. Rahul Mishra,17.821627,94.010242
+CarePlus Hospital 237,Eye Infection,Ophthalmologist,Dr. Priya Yadav,28.811047,77.593085
+LifeCare Hospital 238,Asthma,Pulmonologist,Dr. Rahul Mishra,31.005834,77.627506
+LifeCare Hospital 239,Skin Allergy,Dermatologist,Dr. Rahul Mishra,21.195279,73.686824
+LifeCare Hospital 240,Eye Infection,Ophthalmologist,Dr. Vikas Singh,26.233596,78.120256
+Medico Hospital 241,Eye Infection,Ophthalmologist,Dr. Rahul Mishra,20.873956,81.865905
+Sunrise Hospital 242,Arthritis,Orthopedic,Dr. Sneha Verma,19.981825,80.131958
+Sunrise Hospital 243,Skin Allergy,Dermatologist,Dr. Amit Gupta,22.048363,84.206324
+LifeCare Hospital 244,Migraine,Neurologist,Dr. Rahul Singh,36.85285,83.847016
+City Hospital 245,Skin Allergy,Dermatologist,Dr. Amit Verma,10.57915,87.061853
+Sunrise Hospital 246,Dengue,General Physician,Dr. Rahul Das,12.766481,89.015416
+Sunrise Hospital 247,Dengue,General Physician,Dr. Rahul Mishra,14.367723,76.897725
+LifeCare Hospital 248,Diabetes,Endocrinologist,Dr. Amit Das,12.98711,84.46704
+CarePlus Hospital 249,Dengue,General Physician,Dr. Amit Kumar,23.948262,77.791259
+Sunrise Hospital 250,Pregnancy Care,Gynecologist,Dr. Ravi Gupta,17.831218,90.78007
+Apollo Hospital 251,Dengue,General Physician,Dr. Neha Kumar,23.922893,81.386996
+CarePlus Hospital 252,Kidney Stone,Nephrologist,Dr. Karan Mishra,11.04707,68.002822
+LifeCare Hospital 253,Dengue,General Physician,Dr. Karan Kumar,10.912631,85.852095
+CarePlus Hospital 254,Pregnancy Care,Gynecologist,Dr. Rahul Verma,30.325813,72.935664
+CarePlus Hospital 255,Kidney Stone,Nephrologist,Dr. Anjali Singh,16.694763,87.653564
+Medico Hospital 256,Dengue,General Physician,Dr. Amit Verma,29.308945,91.396448
+Medico Hospital 257,Dengue,General Physician,Dr. Amit Sharma,9.738377,89.010886
+CarePlus Hospital 258,Eye Infection,Ophthalmologist,Dr. Vikas Das,25.753468,92.234848
+City Hospital 259,Arthritis,Orthopedic,Dr. Vikas Mishra,16.752587,78.174516
+City Hospital 260,Dengue,General Physician,Dr. Pooja Sharma,27.366409,68.849796
+Sunrise Hospital 261,Arthritis,Orthopedic,Dr. Karan Kumar,36.548223,82.65349
+Sunrise Hospital 262,Skin Allergy,Dermatologist,Dr. Vikas Yadav,23.699476,93.49149
+Global Hospital 263,Arthritis,Orthopedic,Dr. Karan Singh,13.052694,85.896965
+Apollo Hospital 264,Asthma,Pulmonologist,Dr. Anjali Gupta,11.56229,68.715206
+CarePlus Hospital 265,Migraine,Neurologist,Dr. Rahul Mishra,22.052919,77.06101
+CarePlus Hospital 266,Pregnancy Care,Gynecologist,Dr. Ravi Kumar,33.269963,76.930878
+City Hospital 267,Pregnancy Care,Gynecologist,Dr. Vikas Kumar,27.327956,85.106925
+Sunrise Hospital 268,Migraine,Neurologist,Dr. Pooja Yadav,21.152766,95.229826
+LifeCare Hospital 269,Arthritis,Orthopedic,Dr. Karan Singh,14.997921,90.715543
+Sunrise Hospital 270,Arthritis,Orthopedic,Dr. Rahul Das,20.008885,88.141944
+CarePlus Hospital 271,Heart Attack,Cardiologist,Dr. Rahul Mishra,16.886426,78.635873
+City Hospital 272,Diabetes,Endocrinologist,Dr. Amit Yadav,26.656313,68.366715
+LifeCare Hospital 273,Heart Attack,Cardiologist,Dr. Pooja Gupta,20.941163,72.229926
+City Hospital 274,Dengue,General Physician,Dr. Ravi Kumar,22.362914,84.366668
+Sunrise Hospital 275,Arthritis,Orthopedic,Dr. Pooja Kumar,23.468234,87.71847
+Apollo Hospital 276,Eye Infection,Ophthalmologist,Dr. Karan Kumar,36.952641,71.433571
+LifeCare Hospital 277,Migraine,Neurologist,Dr. Anjali Das,13.949568,68.912636
+Apollo Hospital 278,Pregnancy Care,Gynecologist,Dr. Neha Gupta,18.182588,77.107231
+City Hospital 279,Arthritis,Orthopedic,Dr. Sneha Gupta,23.822383,89.209468
+Global Hospital 280,Migraine,Neurologist,Dr. Vikas Das,29.77141,85.430593
+LifeCare Hospital 281,Kidney Stone,Nephrologist,Dr. Karan Gupta,28.726492,87.827126
+Sunrise Hospital 282,Eye Infection,Ophthalmologist,Dr. Karan Sharma,18.387994,87.666186
+Sunrise Hospital 283,Skin Allergy,Dermatologist,Dr. Pooja Gupta,35.779726,81.633373
+Apollo Hospital 284,Diabetes,Endocrinologist,Dr. Sneha Mishra,22.060061,89.694381
+Medico Hospital 285,Skin Allergy,Dermatologist,Dr. Vikas Das,19.520812,82.32981
+City Hospital 286,Skin Allergy,Dermatologist,Dr. Neha Verma,10.35648,91.548957
+Global Hospital 287,Dengue,General Physician,Dr. Neha Verma,33.541649,95.196753
+City Hospital 288,Eye Infection,Ophthalmologist,Dr. Vikas Gupta,27.143213,84.010217
+Medico Hospital 289,Pregnancy Care,Gynecologist,Dr. Amit Gupta,33.59549,83.787055
+CarePlus Hospital 290,Pregnancy Care,Gynecologist,Dr. Rahul Verma,33.555942,92.045243
+LifeCare Hospital 291,Migraine,Neurologist,Dr. Pooja Das,28.067606,81.544366
+City Hospital 292,Heart Attack,Cardiologist,Dr. Rahul Singh,26.562868,80.416119
+Medico Hospital 293,Kidney Stone,Nephrologist,Dr. Amit Gupta,12.671262,75.538979
+LifeCare Hospital 294,Pregnancy Care,Gynecologist,Dr. Karan Sharma,25.608412,82.375781
+CarePlus Hospital 295,Skin Allergy,Dermatologist,Dr. Rahul Yadav,19.289529,75.940445
+Apollo Hospital 296,Migraine,Neurologist,Dr. Anjali Verma,21.835604,96.522972
+City Hospital 297,Arthritis,Orthopedic,Dr. Karan Kumar,36.904774,96.134969
+Apollo Hospital 298,Kidney Stone,Nephrologist,Dr. Pooja Gupta,12.486993,91.984723
+CarePlus Hospital 299,Pregnancy Care,Gynecologist,Dr. Pooja Das,21.355461,82.544214
+Global Hospital 300,Dengue,General Physician,Dr. Vikas Verma,36.485568,69.542754
+CarePlus Hospital 301,Pregnancy Care,Gynecologist,Dr. Amit Gupta,19.352662,85.002164
+Medico Hospital 302,Arthritis,Orthopedic,Dr. Anjali Singh,34.625887,68.663897
+Global Hospital 303,Pregnancy Care,Gynecologist,Dr. Karan Das,35.804786,95.904656
+CarePlus Hospital 304,Migraine,Neurologist,Dr. Neha Verma,13.94324,75.57397
+Global Hospital 305,Eye Infection,Ophthalmologist,Dr. Vikas Gupta,27.739594,95.324528
+City Hospital 306,Skin Allergy,Dermatologist,Dr. Amit Das,31.25037,76.588893
+City Hospital 307,Kidney Stone,Nephrologist,Dr. Rahul Gupta,23.15623,73.494282
+City Hospital 308,Heart Attack,Cardiologist,Dr. Anjali Sharma,34.489602,76.175842
+LifeCare Hospital 309,Pregnancy Care,Gynecologist,Dr. Sneha Singh,12.523674,68.659004
+LifeCare Hospital 310,Diabetes,Endocrinologist,Dr. Ravi Singh,9.058742,74.344099
+City Hospital 311,Heart Attack,Cardiologist,Dr. Ravi Mishra,8.456833,73.191754
+City Hospital 312,Migraine,Neurologist,Dr. Neha Singh,10.162096,90.553172
+CarePlus Hospital 313,Pregnancy Care,Gynecologist,Dr. Neha Das,23.726732,94.861646
+LifeCare Hospital 314,Migraine,Neurologist,Dr. Ravi Yadav,27.413921,71.478583
+Apollo Hospital 315,Heart Attack,Cardiologist,Dr. Pooja Das,32.545743,95.614461
+CarePlus Hospital 316,Arthritis,Orthopedic,Dr. Sneha Singh,15.145884,71.382664
+LifeCare Hospital 317,Arthritis,Orthopedic,Dr. Vikas Yadav,32.943464,87.217754
+Global Hospital 318,Asthma,Pulmonologist,Dr. Neha Singh,18.863201,95.02569
+Apollo Hospital 319,Migraine,Neurologist,Dr. Neha Mishra,16.08356,76.38465
+LifeCare Hospital 320,Dengue,General Physician,Dr. Sneha Mishra,17.945793,74.815654
+Medico Hospital 321,Asthma,Pulmonologist,Dr. Anjali Kumar,24.610087,71.201105
+Sunrise Hospital 322,Eye Infection,Ophthalmologist,Dr. Amit Verma,19.847427,82.017987
+Apollo Hospital 323,Diabetes,Endocrinologist,Dr. Rahul Verma,8.59548,71.705858
+City Hospital 324,Arthritis,Orthopedic,Dr. Priya Yadav,14.732811,94.314319
+LifeCare Hospital 325,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,8.532763,77.007705
+Apollo Hospital 326,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,17.108789,75.220498
+CarePlus Hospital 327,Asthma,Pulmonologist,Dr. Amit Das,22.010739,70.099745
+Global Hospital 328,Asthma,Pulmonologist,Dr. Anjali Singh,16.228393,89.770593
+Medico Hospital 329,Skin Allergy,Dermatologist,Dr. Rahul Sharma,34.540623,94.121834
+LifeCare Hospital 330,Kidney Stone,Nephrologist,Dr. Pooja Kumar,24.563052,70.207099
+City Hospital 331,Pregnancy Care,Gynecologist,Dr. Pooja Das,29.521529,81.843151
+City Hospital 332,Heart Attack,Cardiologist,Dr. Pooja Yadav,8.591661,94.113952
+CarePlus Hospital 333,Arthritis,Orthopedic,Dr. Ravi Mishra,8.630982,85.661465
+LifeCare Hospital 334,Skin Allergy,Dermatologist,Dr. Priya Yadav,31.442932,72.824132
+Medico Hospital 335,Arthritis,Orthopedic,Dr. Amit Yadav,14.40135,82.738356
+City Hospital 336,Dengue,General Physician,Dr. Rahul Yadav,10.285711,89.363117
+Global Hospital 337,Skin Allergy,Dermatologist,Dr. Pooja Verma,19.966721,77.102195
+Apollo Hospital 338,Arthritis,Orthopedic,Dr. Rahul Yadav,32.805686,85.949311
+Medico Hospital 339,Diabetes,Endocrinologist,Dr. Anjali Das,27.77274,85.692915
+Sunrise Hospital 340,Asthma,Pulmonologist,Dr. Amit Gupta,30.417583,80.011404
+City Hospital 341,Skin Allergy,Dermatologist,Dr. Priya Sharma,19.172082,78.977047
+City Hospital 342,Arthritis,Orthopedic,Dr. Karan Yadav,8.929622,77.610083
+Medico Hospital 343,Arthritis,Orthopedic,Dr. Karan Verma,34.781814,81.747116
+City Hospital 344,Eye Infection,Ophthalmologist,Dr. Rahul Kumar,13.975158,96.556353
+Medico Hospital 345,Asthma,Pulmonologist,Dr. Anjali Verma,27.438083,81.161465
+City Hospital 346,Dengue,General Physician,Dr. Rahul Gupta,17.344809,74.575369
+Medico Hospital 347,Dengue,General Physician,Dr. Karan Sharma,34.435816,71.076908
+City Hospital 348,Kidney Stone,Nephrologist,Dr. Anjali Kumar,9.381421,93.681654
+CarePlus Hospital 349,Asthma,Pulmonologist,Dr. Anjali Verma,24.255626,77.84591
+Apollo Hospital 350,Migraine,Neurologist,Dr. Amit Kumar,17.803537,88.862195
+Medico Hospital 351,Dengue,General Physician,Dr. Amit Sharma,12.006249,91.720704
+Apollo Hospital 352,Skin Allergy,Dermatologist,Dr. Priya Gupta,10.109264,74.845489
+Global Hospital 353,Eye Infection,Ophthalmologist,Dr. Rahul Mishra,19.026182,88.960378
+Medico Hospital 354,Kidney Stone,Nephrologist,Dr. Karan Sharma,28.816244,70.036123
+CarePlus Hospital 355,Kidney Stone,Nephrologist,Dr. Pooja Mishra,10.084765,86.062325
+City Hospital 356,Arthritis,Orthopedic,Dr. Neha Singh,19.246315,75.009323
+Medico Hospital 357,Asthma,Pulmonologist,Dr. Vikas Verma,33.104222,92.655846
+Medico Hospital 358,Migraine,Neurologist,Dr. Neha Gupta,31.408528,91.026327
+Medico Hospital 359,Pregnancy Care,Gynecologist,Dr. Neha Verma,27.474369,94.304114
+CarePlus Hospital 360,Diabetes,Endocrinologist,Dr. Pooja Kumar,21.125506,71.954067
+Medico Hospital 361,Diabetes,Endocrinologist,Dr. Pooja Verma,19.269,83.085755
+Medico Hospital 362,Diabetes,Endocrinologist,Dr. Anjali Yadav,33.722474,81.619507
+Sunrise Hospital 363,Heart Attack,Cardiologist,Dr. Vikas Yadav,12.399506,74.709427
+Sunrise Hospital 364,Eye Infection,Ophthalmologist,Dr. Karan Verma,27.540674,81.140187
+Sunrise Hospital 365,Diabetes,Endocrinologist,Dr. Priya Sharma,25.879048,96.907122
+CarePlus Hospital 366,Asthma,Pulmonologist,Dr. Rahul Sharma,18.282946,93.574862
+City Hospital 367,Diabetes,Endocrinologist,Dr. Rahul Yadav,12.989166,75.420963
+Global Hospital 368,Skin Allergy,Dermatologist,Dr. Sneha Gupta,11.969411,77.003043
+Global Hospital 369,Pregnancy Care,Gynecologist,Dr. Pooja Singh,17.854524,90.843015
+CarePlus Hospital 370,Asthma,Pulmonologist,Dr. Ravi Verma,36.237994,86.84556
+City Hospital 371,Skin Allergy,Dermatologist,Dr. Anjali Mishra,27.801393,70.894286
+Global Hospital 372,Kidney Stone,Nephrologist,Dr. Vikas Yadav,36.5178,87.617901
+Sunrise Hospital 373,Heart Attack,Cardiologist,Dr. Anjali Mishra,21.89715,81.046555
+Apollo Hospital 374,Diabetes,Endocrinologist,Dr. Rahul Singh,10.928501,94.940414
+Medico Hospital 375,Migraine,Neurologist,Dr. Pooja Yadav,28.050665,93.909062
+LifeCare Hospital 376,Diabetes,Endocrinologist,Dr. Anjali Das,11.460957,70.854014
+CarePlus Hospital 377,Arthritis,Orthopedic,Dr. Anjali Das,24.803493,86.799657
+Medico Hospital 378,Dengue,General Physician,Dr. Karan Gupta,25.930459,93.943814
+CarePlus Hospital 379,Heart Attack,Cardiologist,Dr. Karan Das,20.354959,96.301808
+Medico Hospital 380,Dengue,General Physician,Dr. Ravi Singh,8.658464,93.315545
+LifeCare Hospital 381,Skin Allergy,Dermatologist,Dr. Neha Verma,10.659208,76.539131
+Apollo Hospital 382,Kidney Stone,Nephrologist,Dr. Amit Verma,22.396344,87.962746
+Apollo Hospital 383,Dengue,General Physician,Dr. Pooja Gupta,32.821973,87.771339
+Apollo Hospital 384,Heart Attack,Cardiologist,Dr. Sneha Verma,32.289637,78.084939
+Sunrise Hospital 385,Skin Allergy,Dermatologist,Dr. Priya Mishra,9.613122,76.828465
+City Hospital 386,Diabetes,Endocrinologist,Dr. Ravi Verma,26.874234,78.831879
+Global Hospital 387,Migraine,Neurologist,Dr. Priya Mishra,17.443509,73.225721
+Sunrise Hospital 388,Asthma,Pulmonologist,Dr. Rahul Mishra,8.159468,85.995619
+LifeCare Hospital 389,Migraine,Neurologist,Dr. Vikas Kumar,29.238233,76.725967
+Medico Hospital 390,Dengue,General Physician,Dr. Sneha Gupta,20.147655,69.51914
+CarePlus Hospital 391,Dengue,General Physician,Dr. Vikas Das,36.864971,71.96444
+Apollo Hospital 392,Eye Infection,Ophthalmologist,Dr. Karan Das,10.388741,88.874336
+Global Hospital 393,Arthritis,Orthopedic,Dr. Amit Singh,23.263524,85.339537
+CarePlus Hospital 394,Migraine,Neurologist,Dr. Pooja Singh,33.262671,79.982525
+CarePlus Hospital 395,Pregnancy Care,Gynecologist,Dr. Vikas Singh,13.329425,81.798707
+City Hospital 396,Diabetes,Endocrinologist,Dr. Karan Singh,16.976784,95.470779
+Sunrise Hospital 397,Pregnancy Care,Gynecologist,Dr. Anjali Verma,10.44886,96.674668
+LifeCare Hospital 398,Diabetes,Endocrinologist,Dr. Sneha Mishra,13.720215,93.486089
+Medico Hospital 399,Dengue,General Physician,Dr. Priya Sharma,14.193749,80.719595
+LifeCare Hospital 400,Heart Attack,Cardiologist,Dr. Anjali Sharma,21.729061,94.546879
+CarePlus Hospital 401,Kidney Stone,Nephrologist,Dr. Neha Das,13.871152,81.746774
+CarePlus Hospital 402,Pregnancy Care,Gynecologist,Dr. Priya Verma,26.299339,90.243056
+Sunrise Hospital 403,Asthma,Pulmonologist,Dr. Amit Gupta,29.126017,88.147925
+Sunrise Hospital 404,Migraine,Neurologist,Dr. Pooja Das,15.3143,82.231816
+LifeCare Hospital 405,Dengue,General Physician,Dr. Vikas Das,29.17258,80.462512
+Medico Hospital 406,Asthma,Pulmonologist,Dr. Karan Yadav,31.687087,89.284747
+City Hospital 407,Diabetes,Endocrinologist,Dr. Karan Gupta,26.457393,93.079387
+Apollo Hospital 408,Eye Infection,Ophthalmologist,Dr. Neha Kumar,22.381649,82.547175
+CarePlus Hospital 409,Asthma,Pulmonologist,Dr. Amit Yadav,16.089089,83.234092
+Medico Hospital 410,Arthritis,Orthopedic,Dr. Vikas Verma,20.23243,68.162883
+City Hospital 411,Migraine,Neurologist,Dr. Neha Mishra,10.808135,85.654155
+Sunrise Hospital 412,Eye Infection,Ophthalmologist,Dr. Sneha Kumar,31.553471,87.561213
+Sunrise Hospital 413,Arthritis,Orthopedic,Dr. Karan Das,17.081682,84.501651
+LifeCare Hospital 414,Migraine,Neurologist,Dr. Neha Verma,24.167421,82.959663
+Apollo Hospital 415,Pregnancy Care,Gynecologist,Dr. Ravi Singh,28.301624,83.938183
+Sunrise Hospital 416,Heart Attack,Cardiologist,Dr. Vikas Gupta,27.412324,80.638135
+LifeCare Hospital 417,Pregnancy Care,Gynecologist,Dr. Sneha Verma,27.338312,72.263393
+City Hospital 418,Kidney Stone,Nephrologist,Dr. Vikas Gupta,35.539525,90.791544
+CarePlus Hospital 419,Skin Allergy,Dermatologist,Dr. Neha Kumar,8.793359,74.944214
+CarePlus Hospital 420,Skin Allergy,Dermatologist,Dr. Pooja Gupta,27.305918,86.997588
+LifeCare Hospital 421,Heart Attack,Cardiologist,Dr. Ravi Singh,36.331314,86.29775
+City Hospital 422,Dengue,General Physician,Dr. Karan Yadav,34.215048,79.797838
+CarePlus Hospital 423,Asthma,Pulmonologist,Dr. Sneha Kumar,17.864817,70.674079
+LifeCare Hospital 424,Asthma,Pulmonologist,Dr. Karan Kumar,23.701921,72.629295
+Global Hospital 425,Asthma,Pulmonologist,Dr. Vikas Kumar,32.13609,71.833106
+City Hospital 426,Dengue,General Physician,Dr. Pooja Yadav,33.268513,74.195309
+LifeCare Hospital 427,Kidney Stone,Nephrologist,Dr. Rahul Mishra,31.567901,95.2748
+Apollo Hospital 428,Heart Attack,Cardiologist,Dr. Sneha Das,29.037066,90.546964
+CarePlus Hospital 429,Eye Infection,Ophthalmologist,Dr. Rahul Das,15.882492,92.986486
+Sunrise Hospital 430,Eye Infection,Ophthalmologist,Dr. Karan Verma,29.978783,84.075996
+CarePlus Hospital 431,Migraine,Neurologist,Dr. Neha Mishra,36.380611,83.850294
+Global Hospital 432,Kidney Stone,Nephrologist,Dr. Priya Kumar,35.198739,77.266865
+Medico Hospital 433,Kidney Stone,Nephrologist,Dr. Priya Verma,10.417678,89.385045
+Apollo Hospital 434,Dengue,General Physician,Dr. Neha Singh,35.690048,69.847058
+Global Hospital 435,Kidney Stone,Nephrologist,Dr. Anjali Gupta,16.97783,73.769911
+Medico Hospital 436,Diabetes,Endocrinologist,Dr. Priya Sharma,18.651479,80.010984
+Apollo Hospital 437,Asthma,Pulmonologist,Dr. Amit Singh,10.563265,93.313459
+Medico Hospital 438,Diabetes,Endocrinologist,Dr. Karan Das,22.775743,76.084417
+CarePlus Hospital 439,Kidney Stone,Nephrologist,Dr. Sneha Sharma,23.498519,72.905457
+Global Hospital 440,Heart Attack,Cardiologist,Dr. Rahul Kumar,18.953219,80.519729
+Apollo Hospital 441,Pregnancy Care,Gynecologist,Dr. Amit Mishra,20.127558,73.681616
+City Hospital 442,Heart Attack,Cardiologist,Dr. Ravi Kumar,29.937751,95.101994
+Apollo Hospital 443,Diabetes,Endocrinologist,Dr. Ravi Verma,21.425375,90.29712
+Apollo Hospital 444,Migraine,Neurologist,Dr. Priya Verma,27.895708,71.810949
+Medico Hospital 445,Heart Attack,Cardiologist,Dr. Karan Das,17.115001,78.698433
+Global Hospital 446,Migraine,Neurologist,Dr. Neha Sharma,26.646747,90.649391
+Apollo Hospital 447,Kidney Stone,Nephrologist,Dr. Sneha Gupta,31.522948,82.71979
+Medico Hospital 448,Diabetes,Endocrinologist,Dr. Karan Yadav,15.104427,94.175564
+Apollo Hospital 449,Dengue,General Physician,Dr. Sneha Gupta,23.846323,94.46537
+LifeCare Hospital 450,Dengue,General Physician,Dr. Ravi Singh,29.089417,82.174675
+City Hospital 451,Arthritis,Orthopedic,Dr. Karan Yadav,11.58335,84.104658
+Sunrise Hospital 452,Pregnancy Care,Gynecologist,Dr. Rahul Sharma,14.906069,78.603212
+CarePlus Hospital 453,Skin Allergy,Dermatologist,Dr. Rahul Sharma,16.824831,78.902707
+Medico Hospital 454,Asthma,Pulmonologist,Dr. Neha Kumar,36.108833,94.259593
+Medico Hospital 455,Migraine,Neurologist,Dr. Neha Sharma,11.463557,77.154288
+Apollo Hospital 456,Heart Attack,Cardiologist,Dr. Karan Yadav,20.214547,95.419879
+Global Hospital 457,Eye Infection,Ophthalmologist,Dr. Anjali Kumar,11.23601,77.751093
+Sunrise Hospital 458,Arthritis,Orthopedic,Dr. Ravi Kumar,31.318828,83.958801
+City Hospital 459,Asthma,Pulmonologist,Dr. Sneha Sharma,30.208784,93.669828
+Global Hospital 460,Kidney Stone,Nephrologist,Dr. Pooja Mishra,32.447906,73.731462
+City Hospital 461,Skin Allergy,Dermatologist,Dr. Rahul Verma,35.228331,69.964459
+CarePlus Hospital 462,Asthma,Pulmonologist,Dr. Sneha Kumar,34.071299,70.793411
+Global Hospital 463,Diabetes,Endocrinologist,Dr. Vikas Yadav,19.197958,77.922912
+LifeCare Hospital 464,Kidney Stone,Nephrologist,Dr. Sneha Gupta,26.751772,72.539128
+LifeCare Hospital 465,Migraine,Neurologist,Dr. Ravi Yadav,27.020928,87.7598
+Global Hospital 466,Skin Allergy,Dermatologist,Dr. Rahul Gupta,15.682248,69.780032
+CarePlus Hospital 467,Diabetes,Endocrinologist,Dr. Pooja Mishra,14.219705,80.365067
+City Hospital 468,Diabetes,Endocrinologist,Dr. Priya Mishra,21.078057,81.302062
+Apollo Hospital 469,Migraine,Neurologist,Dr. Ravi Sharma,26.813903,86.238164
+LifeCare Hospital 470,Diabetes,Endocrinologist,Dr. Neha Yadav,11.782539,70.826311
+LifeCare Hospital 471,Eye Infection,Ophthalmologist,Dr. Pooja Sharma,14.009597,81.400661
+City Hospital 472,Diabetes,Endocrinologist,Dr. Sneha Mishra,20.822646,93.858321
+Medico Hospital 473,Dengue,General Physician,Dr. Sneha Singh,25.991995,71.861314
+Sunrise Hospital 474,Heart Attack,Cardiologist,Dr. Amit Kumar,34.221104,95.491571
+Apollo Hospital 475,Heart Attack,Cardiologist,Dr. Neha Mishra,29.363986,74.665064
+Apollo Hospital 476,Eye Infection,Ophthalmologist,Dr. Ravi Sharma,14.639811,81.529096
+LifeCare Hospital 477,Pregnancy Care,Gynecologist,Dr. Anjali Das,33.745959,90.815301
+Medico Hospital 478,Diabetes,Endocrinologist,Dr. Rahul Sharma,25.642674,95.854286
+LifeCare Hospital 479,Diabetes,Endocrinologist,Dr. Pooja Verma,23.935711,77.970626
+Medico Hospital 480,Asthma,Pulmonologist,Dr. Amit Yadav,24.655629,82.114739
+Global Hospital 481,Dengue,General Physician,Dr. Pooja Kumar,15.669202,75.646165
+Sunrise Hospital 482,Diabetes,Endocrinologist,Dr. Anjali Sharma,30.991692,90.200864
+Sunrise Hospital 483,Eye Infection,Ophthalmologist,Dr. Ravi Sharma,17.521097,73.702861
+CarePlus Hospital 484,Heart Attack,Cardiologist,Dr. Sneha Gupta,10.025835,92.164031
+City Hospital 485,Dengue,General Physician,Dr. Rahul Yadav,23.70623,88.658887
+City Hospital 486,Skin Allergy,Dermatologist,Dr. Priya Sharma,19.750957,70.291523
+LifeCare Hospital 487,Dengue,General Physician,Dr. Amit Verma,19.024815,93.552682
+LifeCare Hospital 488,Asthma,Pulmonologist,Dr. Ravi Mishra,36.919203,95.237665
+Sunrise Hospital 489,Eye Infection,Ophthalmologist,Dr. Sneha Verma,16.651204,93.542774
+LifeCare Hospital 490,Diabetes,Endocrinologist,Dr. Rahul Yadav,27.069662,86.749581
+Global Hospital 491,Arthritis,Orthopedic,Dr. Pooja Singh,35.942443,83.276631
+Global Hospital 492,Pregnancy Care,Gynecologist,Dr. Vikas Sharma,28.330508,81.739565
+Medico Hospital 493,Pregnancy Care,Gynecologist,Dr. Priya Verma,24.544099,73.592637
+Sunrise Hospital 494,Skin Allergy,Dermatologist,Dr. Rahul Kumar,32.79829,84.689322
+LifeCare Hospital 495,Pregnancy Care,Gynecologist,Dr. Rahul Yadav,35.978873,77.385344
+Sunrise Hospital 496,Dengue,General Physician,Dr. Karan Singh,33.738981,86.818411
+LifeCare Hospital 497,Skin Allergy,Dermatologist,Dr. Sneha Mishra,27.575244,95.834833
+Sunrise Hospital 498,Heart Attack,Cardiologist,Dr. Pooja Das,28.142901,80.160146
+LifeCare Hospital 499,Heart Attack,Cardiologist,Dr. Neha Singh,9.792293,84.634839
+Global Hospital 500,Heart Attack,Cardiologist,Dr. Karan Mishra,24.807877,71.197179
+LifeCare Hospital 501,Heart Attack,Cardiologist,Dr. Karan Sharma,34.423816,71.334824
+City Hospital 502,Heart Attack,Cardiologist,Dr. Ravi Kumar,22.095677,96.081371
+Global Hospital 503,Arthritis,Orthopedic,Dr. Anjali Singh,21.422749,95.123885
+Sunrise Hospital 504,Heart Attack,Cardiologist,Dr. Vikas Singh,27.53674,82.380311
+Global Hospital 505,Arthritis,Orthopedic,Dr. Rahul Sharma,36.555602,82.712579
+Medico Hospital 506,Pregnancy Care,Gynecologist,Dr. Sneha Das,34.859489,91.742182
+Medico Hospital 507,Diabetes,Endocrinologist,Dr. Pooja Verma,32.594847,81.906545
+Sunrise Hospital 508,Skin Allergy,Dermatologist,Dr. Priya Yadav,16.706787,80.438218
+Global Hospital 509,Heart Attack,Cardiologist,Dr. Amit Das,13.112882,80.457077
+Global Hospital 510,Asthma,Pulmonologist,Dr. Priya Sharma,17.392982,81.53254
+City Hospital 511,Arthritis,Orthopedic,Dr. Anjali Verma,9.93159,87.401432
+Medico Hospital 512,Arthritis,Orthopedic,Dr. Sneha Gupta,13.876995,77.756145
+CarePlus Hospital 513,Migraine,Neurologist,Dr. Pooja Verma,18.531473,73.628435
+City Hospital 514,Kidney Stone,Nephrologist,Dr. Anjali Yadav,35.644059,80.389971
+Sunrise Hospital 515,Migraine,Neurologist,Dr. Karan Verma,33.519481,77.344547
+Sunrise Hospital 516,Pregnancy Care,Gynecologist,Dr. Pooja Kumar,28.266883,83.632683
+Medico Hospital 517,Diabetes,Endocrinologist,Dr. Priya Sharma,11.587883,91.916956
+CarePlus Hospital 518,Diabetes,Endocrinologist,Dr. Amit Sharma,10.751554,79.432258
+CarePlus Hospital 519,Dengue,General Physician,Dr. Priya Sharma,28.23385,87.621821
+LifeCare Hospital 520,Eye Infection,Ophthalmologist,Dr. Rahul Kumar,14.823355,84.722571
+CarePlus Hospital 521,Eye Infection,Ophthalmologist,Dr. Pooja Kumar,11.377964,78.324061
+Apollo Hospital 522,Kidney Stone,Nephrologist,Dr. Karan Sharma,22.143691,68.105373
+City Hospital 523,Skin Allergy,Dermatologist,Dr. Priya Gupta,26.418867,71.144586
+Apollo Hospital 524,Eye Infection,Ophthalmologist,Dr. Vikas Das,14.668969,93.089496
+LifeCare Hospital 525,Arthritis,Orthopedic,Dr. Vikas Gupta,13.466301,76.194899
+Global Hospital 526,Heart Attack,Cardiologist,Dr. Pooja Sharma,25.818143,68.675519
+CarePlus Hospital 527,Diabetes,Endocrinologist,Dr. Karan Das,13.20397,70.723958
+Medico Hospital 528,Kidney Stone,Nephrologist,Dr. Karan Kumar,10.303923,69.039716
+CarePlus Hospital 529,Pregnancy Care,Gynecologist,Dr. Karan Sharma,26.510873,93.64717
+LifeCare Hospital 530,Migraine,Neurologist,Dr. Amit Yadav,30.140352,95.718013
+City Hospital 531,Diabetes,Endocrinologist,Dr. Ravi Das,32.760024,78.704252
+Global Hospital 532,Asthma,Pulmonologist,Dr. Karan Das,31.666833,84.98568
+Apollo Hospital 533,Migraine,Neurologist,Dr. Karan Das,24.88113,77.426185
+Global Hospital 534,Heart Attack,Cardiologist,Dr. Vikas Kumar,24.731829,84.112263
+Global Hospital 535,Arthritis,Orthopedic,Dr. Vikas Singh,22.085203,85.360638
+Sunrise Hospital 536,Eye Infection,Ophthalmologist,Dr. Anjali Das,20.689214,85.746654
+CarePlus Hospital 537,Diabetes,Endocrinologist,Dr. Anjali Kumar,11.636949,71.464635
+Global Hospital 538,Eye Infection,Ophthalmologist,Dr. Ravi Verma,19.894413,86.782749
+City Hospital 539,Asthma,Pulmonologist,Dr. Neha Sharma,34.047764,68.821551
+Apollo Hospital 540,Dengue,General Physician,Dr. Sneha Kumar,23.149329,76.403165
+City Hospital 541,Eye Infection,Ophthalmologist,Dr. Amit Sharma,26.865445,74.397559
+Medico Hospital 542,Skin Allergy,Dermatologist,Dr. Priya Yadav,28.150628,87.544242
+LifeCare Hospital 543,Arthritis,Orthopedic,Dr. Vikas Kumar,33.520992,96.89795
+CarePlus Hospital 544,Dengue,General Physician,Dr. Vikas Mishra,12.950115,81.153677
+Global Hospital 545,Skin Allergy,Dermatologist,Dr. Karan Kumar,24.333917,70.813606
+LifeCare Hospital 546,Migraine,Neurologist,Dr. Karan Singh,26.227617,74.630797
+Global Hospital 547,Pregnancy Care,Gynecologist,Dr. Pooja Das,10.349014,81.062177
+Global Hospital 548,Heart Attack,Cardiologist,Dr. Anjali Das,34.721901,83.842159
+City Hospital 549,Heart Attack,Cardiologist,Dr. Neha Mishra,24.193593,83.189703
+Sunrise Hospital 550,Dengue,General Physician,Dr. Vikas Mishra,8.434334,78.582702
+City Hospital 551,Asthma,Pulmonologist,Dr. Ravi Singh,14.969007,80.812341
+LifeCare Hospital 552,Kidney Stone,Nephrologist,Dr. Neha Das,26.474895,90.361669
+Sunrise Hospital 553,Skin Allergy,Dermatologist,Dr. Amit Kumar,13.95345,87.418219
+Apollo Hospital 554,Migraine,Neurologist,Dr. Pooja Gupta,25.024057,75.175003
+LifeCare Hospital 555,Pregnancy Care,Gynecologist,Dr. Ravi Sharma,28.83542,82.263187
+CarePlus Hospital 556,Diabetes,Endocrinologist,Dr. Anjali Das,23.619962,80.693591
+LifeCare Hospital 557,Eye Infection,Ophthalmologist,Dr. Neha Mishra,17.506196,90.988888
+LifeCare Hospital 558,Asthma,Pulmonologist,Dr. Ravi Das,16.833548,77.000334
+Sunrise Hospital 559,Heart Attack,Cardiologist,Dr. Sneha Yadav,24.846591,94.52071
+Apollo Hospital 560,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,33.922773,80.127871
+CarePlus Hospital 561,Migraine,Neurologist,Dr. Ravi Gupta,32.033213,84.955224
+Medico Hospital 562,Arthritis,Orthopedic,Dr. Ravi Gupta,25.881682,78.901784
+Global Hospital 563,Dengue,General Physician,Dr. Anjali Singh,18.835049,82.508995
+Global Hospital 564,Pregnancy Care,Gynecologist,Dr. Karan Gupta,33.517006,88.002797
+Apollo Hospital 565,Pregnancy Care,Gynecologist,Dr. Priya Sharma,19.309328,68.870072
+Apollo Hospital 566,Arthritis,Orthopedic,Dr. Amit Gupta,12.737928,82.896224
+Global Hospital 567,Heart Attack,Cardiologist,Dr. Vikas Das,11.23842,89.366578
+Sunrise Hospital 568,Migraine,Neurologist,Dr. Vikas Yadav,22.881736,86.041374
+Sunrise Hospital 569,Migraine,Neurologist,Dr. Anjali Sharma,33.40527,82.113106
+City Hospital 570,Diabetes,Endocrinologist,Dr. Amit Das,27.736476,75.851127
+Apollo Hospital 571,Diabetes,Endocrinologist,Dr. Priya Gupta,9.332381,73.966272
+LifeCare Hospital 572,Heart Attack,Cardiologist,Dr. Rahul Sharma,9.127571,78.560988
+Global Hospital 573,Pregnancy Care,Gynecologist,Dr. Rahul Singh,12.024726,87.390118
+LifeCare Hospital 574,Eye Infection,Ophthalmologist,Dr. Neha Singh,27.690714,80.59694
+Apollo Hospital 575,Kidney Stone,Nephrologist,Dr. Anjali Verma,35.511063,87.306757
+Sunrise Hospital 576,Kidney Stone,Nephrologist,Dr. Amit Sharma,21.01532,94.629304
+Apollo Hospital 577,Dengue,General Physician,Dr. Rahul Mishra,16.110145,73.657188
+LifeCare Hospital 578,Asthma,Pulmonologist,Dr. Priya Mishra,30.987019,83.092833
+CarePlus Hospital 579,Heart Attack,Cardiologist,Dr. Karan Yadav,23.544713,88.228643
+Apollo Hospital 580,Dengue,General Physician,Dr. Karan Singh,27.994306,71.171955
+Apollo Hospital 581,Diabetes,Endocrinologist,Dr. Karan Sharma,23.345139,79.410847
+Sunrise Hospital 582,Pregnancy Care,Gynecologist,Dr. Neha Yadav,35.466015,74.62379
+Global Hospital 583,Heart Attack,Cardiologist,Dr. Rahul Yadav,8.272041,68.031915
+Apollo Hospital 584,Arthritis,Orthopedic,Dr. Neha Yadav,26.651606,95.484316
+Apollo Hospital 585,Eye Infection,Ophthalmologist,Dr. Neha Mishra,27.865097,71.259144
+Sunrise Hospital 586,Dengue,General Physician,Dr. Sneha Sharma,8.553233,80.67069
+Apollo Hospital 587,Asthma,Pulmonologist,Dr. Priya Singh,17.110242,92.871603
+LifeCare Hospital 588,Eye Infection,Ophthalmologist,Dr. Ravi Sharma,14.996422,92.12587
+Apollo Hospital 589,Diabetes,Endocrinologist,Dr. Vikas Gupta,16.803982,82.202787
+Apollo Hospital 590,Skin Allergy,Dermatologist,Dr. Neha Mishra,23.725123,72.252384
+Medico Hospital 591,Pregnancy Care,Gynecologist,Dr. Priya Mishra,33.591863,95.344462
+City Hospital 592,Dengue,General Physician,Dr. Pooja Gupta,20.561032,87.136574
+Apollo Hospital 593,Eye Infection,Ophthalmologist,Dr. Ravi Mishra,34.949574,68.532916
+Medico Hospital 594,Diabetes,Endocrinologist,Dr. Amit Verma,11.221602,87.189701
+Apollo Hospital 595,Kidney Stone,Nephrologist,Dr. Anjali Das,28.679314,91.329015
+Global Hospital 596,Asthma,Pulmonologist,Dr. Amit Das,16.300668,71.916997
+Global Hospital 597,Dengue,General Physician,Dr. Karan Singh,30.06137,71.158327
+City Hospital 598,Arthritis,Orthopedic,Dr. Karan Gupta,22.257832,93.054289
+LifeCare Hospital 599,Skin Allergy,Dermatologist,Dr. Karan Mishra,17.357262,79.861309
+LifeCare Hospital 600,Diabetes,Endocrinologist,Dr. Pooja Verma,13.54132,78.66505
+LifeCare Hospital 601,Arthritis,Orthopedic,Dr. Amit Singh,35.961942,87.103561
+Medico Hospital 602,Dengue,General Physician,Dr. Rahul Yadav,25.344355,68.671491
+Global Hospital 603,Diabetes,Endocrinologist,Dr. Anjali Singh,11.759355,68.835853
+Global Hospital 604,Diabetes,Endocrinologist,Dr. Amit Kumar,27.395272,74.360798
+Sunrise Hospital 605,Eye Infection,Ophthalmologist,Dr. Pooja Sharma,35.722533,71.079766
+Medico Hospital 606,Kidney Stone,Nephrologist,Dr. Pooja Sharma,21.739755,75.521441
+Medico Hospital 607,Arthritis,Orthopedic,Dr. Ravi Das,29.96821,94.160371
+Global Hospital 608,Asthma,Pulmonologist,Dr. Neha Verma,14.217983,86.812006
+City Hospital 609,Asthma,Pulmonologist,Dr. Amit Gupta,13.652402,87.930532
+Sunrise Hospital 610,Eye Infection,Ophthalmologist,Dr. Priya Mishra,9.167301,81.96112
+LifeCare Hospital 611,Diabetes,Endocrinologist,Dr. Anjali Kumar,23.82672,96.791629
+CarePlus Hospital 612,Kidney Stone,Nephrologist,Dr. Priya Verma,25.01652,81.557835
+CarePlus Hospital 613,Skin Allergy,Dermatologist,Dr. Sneha Mishra,29.834338,73.048664
+LifeCare Hospital 614,Pregnancy Care,Gynecologist,Dr. Neha Singh,36.51748,78.947198
+LifeCare Hospital 615,Diabetes,Endocrinologist,Dr. Rahul Das,18.910014,69.761191
+CarePlus Hospital 616,Kidney Stone,Nephrologist,Dr. Karan Sharma,30.264254,80.649751
+Sunrise Hospital 617,Heart Attack,Cardiologist,Dr. Ravi Yadav,12.991224,94.736941
+CarePlus Hospital 618,Dengue,General Physician,Dr. Vikas Das,33.341035,84.58716
+LifeCare Hospital 619,Dengue,General Physician,Dr. Vikas Verma,23.676858,81.087556
+CarePlus Hospital 620,Arthritis,Orthopedic,Dr. Sneha Yadav,11.693923,76.38649
+Medico Hospital 621,Skin Allergy,Dermatologist,Dr. Vikas Das,33.980526,88.079656
+CarePlus Hospital 622,Migraine,Neurologist,Dr. Amit Kumar,36.030138,74.990738
+CarePlus Hospital 623,Skin Allergy,Dermatologist,Dr. Karan Sharma,17.765502,92.587726
+City Hospital 624,Heart Attack,Cardiologist,Dr. Amit Verma,12.42463,80.38753
+CarePlus Hospital 625,Skin Allergy,Dermatologist,Dr. Anjali Singh,27.139623,78.104324
+Apollo Hospital 626,Skin Allergy,Dermatologist,Dr. Neha Singh,31.123344,73.124078
+CarePlus Hospital 627,Migraine,Neurologist,Dr. Ravi Kumar,18.690553,78.635435
+Apollo Hospital 628,Diabetes,Endocrinologist,Dr. Rahul Das,10.794511,96.967594
+City Hospital 629,Kidney Stone,Nephrologist,Dr. Ravi Sharma,16.181238,78.655783
+CarePlus Hospital 630,Skin Allergy,Dermatologist,Dr. Vikas Verma,31.725211,92.671068
+CarePlus Hospital 631,Arthritis,Orthopedic,Dr. Neha Verma,31.346976,88.694501
+Sunrise Hospital 632,Kidney Stone,Nephrologist,Dr. Vikas Kumar,14.896816,85.34417
+CarePlus Hospital 633,Pregnancy Care,Gynecologist,Dr. Ravi Gupta,11.404763,87.471927
+Global Hospital 634,Heart Attack,Cardiologist,Dr. Sneha Gupta,32.714337,95.998152
+City Hospital 635,Diabetes,Endocrinologist,Dr. Karan Yadav,21.535086,84.052968
+Global Hospital 636,Kidney Stone,Nephrologist,Dr. Amit Mishra,30.13759,70.443204
+Global Hospital 637,Diabetes,Endocrinologist,Dr. Amit Sharma,19.768595,81.191087
+Apollo Hospital 638,Pregnancy Care,Gynecologist,Dr. Sneha Singh,34.904463,72.276174
+CarePlus Hospital 639,Eye Infection,Ophthalmologist,Dr. Anjali Verma,8.026576,89.048612
+CarePlus Hospital 640,Migraine,Neurologist,Dr. Rahul Yadav,20.153782,84.262137
+Apollo Hospital 641,Asthma,Pulmonologist,Dr. Pooja Verma,20.516581,91.09906
+City Hospital 642,Pregnancy Care,Gynecologist,Dr. Amit Singh,35.450748,70.771899
+CarePlus Hospital 643,Pregnancy Care,Gynecologist,Dr. Rahul Yadav,22.59027,89.619218
+City Hospital 644,Kidney Stone,Nephrologist,Dr. Neha Gupta,23.41049,78.036715
+City Hospital 645,Asthma,Pulmonologist,Dr. Pooja Mishra,22.195631,80.912362
+Apollo Hospital 646,Asthma,Pulmonologist,Dr. Ravi Kumar,36.826859,71.364588
+LifeCare Hospital 647,Skin Allergy,Dermatologist,Dr. Anjali Das,27.426777,73.885548
+Medico Hospital 648,Asthma,Pulmonologist,Dr. Neha Mishra,27.169431,72.885177
+Global Hospital 649,Arthritis,Orthopedic,Dr. Vikas Sharma,9.565679,72.141731
+Sunrise Hospital 650,Pregnancy Care,Gynecologist,Dr. Priya Singh,35.066045,80.08854
+City Hospital 651,Arthritis,Orthopedic,Dr. Anjali Yadav,30.264003,75.657868
+Apollo Hospital 652,Heart Attack,Cardiologist,Dr. Sneha Singh,33.598706,72.79013
+Apollo Hospital 653,Kidney Stone,Nephrologist,Dr. Ravi Mishra,13.075441,71.69292
+Apollo Hospital 654,Dengue,General Physician,Dr. Rahul Kumar,27.929266,95.721598
+Apollo Hospital 655,Asthma,Pulmonologist,Dr. Karan Kumar,15.131999,81.308587
+City Hospital 656,Kidney Stone,Nephrologist,Dr. Rahul Das,29.151215,81.15619
+Apollo Hospital 657,Arthritis,Orthopedic,Dr. Pooja Sharma,20.469962,90.836379
+CarePlus Hospital 658,Arthritis,Orthopedic,Dr. Amit Verma,32.579891,70.399872
+Global Hospital 659,Kidney Stone,Nephrologist,Dr. Rahul Mishra,33.272748,80.916099
+CarePlus Hospital 660,Heart Attack,Cardiologist,Dr. Priya Mishra,30.896845,78.684712
+Sunrise Hospital 661,Eye Infection,Ophthalmologist,Dr. Karan Mishra,10.680443,75.214369
+CarePlus Hospital 662,Asthma,Pulmonologist,Dr. Vikas Sharma,20.415615,72.89307
+Medico Hospital 663,Heart Attack,Cardiologist,Dr. Rahul Singh,15.538798,90.36292
+Medico Hospital 664,Diabetes,Endocrinologist,Dr. Vikas Singh,10.084331,76.158382
+Apollo Hospital 665,Dengue,General Physician,Dr. Pooja Kumar,20.135552,92.356931
+City Hospital 666,Diabetes,Endocrinologist,Dr. Ravi Sharma,21.860599,87.883803
+Sunrise Hospital 667,Pregnancy Care,Gynecologist,Dr. Rahul Verma,33.084404,96.768021
+City Hospital 668,Heart Attack,Cardiologist,Dr. Vikas Kumar,10.092181,68.599473
+Sunrise Hospital 669,Kidney Stone,Nephrologist,Dr. Priya Singh,28.77608,76.532188
+Global Hospital 670,Eye Infection,Ophthalmologist,Dr. Vikas Singh,33.268182,69.890464
+Medico Hospital 671,Asthma,Pulmonologist,Dr. Rahul Gupta,28.172086,96.414069
+Sunrise Hospital 672,Migraine,Neurologist,Dr. Rahul Verma,35.22009,79.717619
+Apollo Hospital 673,Heart Attack,Cardiologist,Dr. Neha Yadav,27.478486,74.831419
+Apollo Hospital 674,Heart Attack,Cardiologist,Dr. Vikas Sharma,16.126762,85.670889
+CarePlus Hospital 675,Arthritis,Orthopedic,Dr. Amit Kumar,8.508189,92.779219
+Apollo Hospital 676,Dengue,General Physician,Dr. Amit Das,30.544303,74.01577
+LifeCare Hospital 677,Asthma,Pulmonologist,Dr. Priya Singh,11.112877,91.248363
+CarePlus Hospital 678,Asthma,Pulmonologist,Dr. Vikas Sharma,11.968088,85.596821
+Sunrise Hospital 679,Skin Allergy,Dermatologist,Dr. Sneha Das,26.082316,74.331836
+Sunrise Hospital 680,Skin Allergy,Dermatologist,Dr. Ravi Mishra,26.027611,96.545033
+Global Hospital 681,Pregnancy Care,Gynecologist,Dr. Sneha Singh,30.038102,70.04527
+Apollo Hospital 682,Dengue,General Physician,Dr. Ravi Yadav,33.881702,96.727921
+Sunrise Hospital 683,Eye Infection,Ophthalmologist,Dr. Priya Singh,27.689663,96.462385
+Medico Hospital 684,Diabetes,Endocrinologist,Dr. Amit Kumar,15.624848,80.545862
+Global Hospital 685,Eye Infection,Ophthalmologist,Dr. Neha Gupta,15.007597,88.711532
+CarePlus Hospital 686,Dengue,General Physician,Dr. Vikas Singh,33.521296,83.316734
+CarePlus Hospital 687,Skin Allergy,Dermatologist,Dr. Karan Verma,28.989759,87.784585
+Global Hospital 688,Dengue,General Physician,Dr. Karan Gupta,34.889962,76.583887
+Medico Hospital 689,Eye Infection,Ophthalmologist,Dr. Rahul Mishra,24.671409,80.869797
+Apollo Hospital 690,Diabetes,Endocrinologist,Dr. Karan Verma,8.131548,77.098664
+Apollo Hospital 691,Diabetes,Endocrinologist,Dr. Ravi Sharma,16.642849,80.262511
+LifeCare Hospital 692,Kidney Stone,Nephrologist,Dr. Ravi Sharma,29.116963,88.461584
+Sunrise Hospital 693,Diabetes,Endocrinologist,Dr. Priya Sharma,28.910323,77.623325
+Sunrise Hospital 694,Migraine,Neurologist,Dr. Vikas Yadav,11.053464,72.910348
+Sunrise Hospital 695,Skin Allergy,Dermatologist,Dr. Ravi Das,18.401272,87.894833
+Medico Hospital 696,Migraine,Neurologist,Dr. Anjali Gupta,32.83182,71.699296
+CarePlus Hospital 697,Diabetes,Endocrinologist,Dr. Rahul Yadav,35.040885,94.339786
+City Hospital 698,Dengue,General Physician,Dr. Neha Sharma,8.36219,76.07982
+CarePlus Hospital 699,Asthma,Pulmonologist,Dr. Neha Das,26.988346,86.466136
+Medico Hospital 700,Kidney Stone,Nephrologist,Dr. Neha Singh,22.538197,76.048495
+Global Hospital 701,Skin Allergy,Dermatologist,Dr. Karan Sharma,28.353986,79.107869
+CarePlus Hospital 702,Kidney Stone,Nephrologist,Dr. Rahul Singh,22.413903,82.244221
+Medico Hospital 703,Diabetes,Endocrinologist,Dr. Ravi Singh,18.578075,84.706584
+CarePlus Hospital 704,Asthma,Pulmonologist,Dr. Karan Singh,10.679432,82.745418
+Sunrise Hospital 705,Skin Allergy,Dermatologist,Dr. Pooja Yadav,16.571772,89.523276
+Global Hospital 706,Skin Allergy,Dermatologist,Dr. Rahul Gupta,15.920101,87.671875
+Sunrise Hospital 707,Pregnancy Care,Gynecologist,Dr. Karan Verma,14.62829,68.318423
+Apollo Hospital 708,Migraine,Neurologist,Dr. Anjali Kumar,21.460184,78.087914
+City Hospital 709,Skin Allergy,Dermatologist,Dr. Vikas Mishra,27.514214,72.307728
+Apollo Hospital 710,Heart Attack,Cardiologist,Dr. Sneha Singh,35.131031,82.408726
+LifeCare Hospital 711,Migraine,Neurologist,Dr. Anjali Sharma,19.180224,92.434184
+Sunrise Hospital 712,Asthma,Pulmonologist,Dr. Priya Verma,27.783073,85.78044
+Medico Hospital 713,Heart Attack,Cardiologist,Dr. Pooja Singh,9.574659,69.841508
+City Hospital 714,Asthma,Pulmonologist,Dr. Sneha Singh,28.102702,83.136944
+Sunrise Hospital 715,Migraine,Neurologist,Dr. Amit Singh,30.524218,82.565525
+Sunrise Hospital 716,Arthritis,Orthopedic,Dr. Sneha Yadav,31.311187,91.349949
+CarePlus Hospital 717,Pregnancy Care,Gynecologist,Dr. Karan Sharma,10.353945,94.045001
+Sunrise Hospital 718,Dengue,General Physician,Dr. Amit Sharma,30.50476,86.591651
+Sunrise Hospital 719,Dengue,General Physician,Dr. Priya Gupta,35.165638,69.413107
+Global Hospital 720,Asthma,Pulmonologist,Dr. Pooja Sharma,24.150766,82.001208
+CarePlus Hospital 721,Heart Attack,Cardiologist,Dr. Anjali Kumar,15.956719,76.349706
+CarePlus Hospital 722,Diabetes,Endocrinologist,Dr. Neha Yadav,25.466799,90.823396
+Apollo Hospital 723,Eye Infection,Ophthalmologist,Dr. Ravi Yadav,10.805504,83.128448
+CarePlus Hospital 724,Skin Allergy,Dermatologist,Dr. Rahul Das,11.509887,71.227674
+Medico Hospital 725,Diabetes,Endocrinologist,Dr. Anjali Gupta,21.727555,75.309778
+Sunrise Hospital 726,Dengue,General Physician,Dr. Sneha Sharma,10.925563,93.176278
+Medico Hospital 727,Asthma,Pulmonologist,Dr. Anjali Verma,29.345521,84.940614
+Global Hospital 728,Eye Infection,Ophthalmologist,Dr. Neha Gupta,35.414178,71.620136
+Medico Hospital 729,Arthritis,Orthopedic,Dr. Pooja Verma,25.095776,70.168288
+Sunrise Hospital 730,Diabetes,Endocrinologist,Dr. Rahul Gupta,13.828829,81.235108
+City Hospital 731,Heart Attack,Cardiologist,Dr. Sneha Singh,19.993726,73.844767
+Apollo Hospital 732,Heart Attack,Cardiologist,Dr. Rahul Mishra,14.833857,69.142683
+LifeCare Hospital 733,Eye Infection,Ophthalmologist,Dr. Neha Yadav,15.785341,79.459787
+CarePlus Hospital 734,Migraine,Neurologist,Dr. Priya Yadav,13.299241,90.860834
+Sunrise Hospital 735,Skin Allergy,Dermatologist,Dr. Ravi Yadav,28.87018,71.409834
+CarePlus Hospital 736,Diabetes,Endocrinologist,Dr. Pooja Singh,34.746055,85.473282
+LifeCare Hospital 737,Dengue,General Physician,Dr. Amit Verma,32.914194,90.436364
+Apollo Hospital 738,Asthma,Pulmonologist,Dr. Karan Das,18.994362,95.37943
+Sunrise Hospital 739,Heart Attack,Cardiologist,Dr. Pooja Gupta,35.73099,93.966532
+Global Hospital 740,Skin Allergy,Dermatologist,Dr. Neha Yadav,26.214432,86.90442
+City Hospital 741,Migraine,Neurologist,Dr. Karan Mishra,15.400416,89.200204
+Global Hospital 742,Eye Infection,Ophthalmologist,Dr. Rahul Yadav,33.920476,75.640706
+CarePlus Hospital 743,Migraine,Neurologist,Dr. Neha Das,36.319578,82.316965
+City Hospital 744,Migraine,Neurologist,Dr. Pooja Verma,25.869,95.220231
+Apollo Hospital 745,Migraine,Neurologist,Dr. Neha Gupta,8.504434,70.553732
+Apollo Hospital 746,Eye Infection,Ophthalmologist,Dr. Anjali Singh,31.830628,76.010371
+LifeCare Hospital 747,Heart Attack,Cardiologist,Dr. Pooja Sharma,11.798968,95.587505
+City Hospital 748,Migraine,Neurologist,Dr. Priya Yadav,23.921581,92.177316
+Medico Hospital 749,Diabetes,Endocrinologist,Dr. Karan Sharma,29.863479,95.933777
+Apollo Hospital 750,Skin Allergy,Dermatologist,Dr. Neha Sharma,34.384786,81.117036
+Global Hospital 751,Arthritis,Orthopedic,Dr. Vikas Gupta,8.679079,86.651045
+LifeCare Hospital 752,Migraine,Neurologist,Dr. Neha Kumar,23.06383,85.35764
+Sunrise Hospital 753,Heart Attack,Cardiologist,Dr. Ravi Singh,14.110304,70.243386
+CarePlus Hospital 754,Eye Infection,Ophthalmologist,Dr. Ravi Singh,35.696875,87.03793
+LifeCare Hospital 755,Migraine,Neurologist,Dr. Neha Kumar,23.461601,91.701837
+City Hospital 756,Heart Attack,Cardiologist,Dr. Vikas Gupta,35.963035,92.245416
+City Hospital 757,Eye Infection,Ophthalmologist,Dr. Ravi Singh,16.997157,82.218119
+City Hospital 758,Skin Allergy,Dermatologist,Dr. Ravi Mishra,24.65269,80.997834
+Medico Hospital 759,Arthritis,Orthopedic,Dr. Priya Gupta,9.213628,71.656878
+LifeCare Hospital 760,Heart Attack,Cardiologist,Dr. Ravi Verma,15.074679,69.681697
+Medico Hospital 761,Skin Allergy,Dermatologist,Dr. Neha Singh,20.94274,69.125465
+Sunrise Hospital 762,Arthritis,Orthopedic,Dr. Ravi Gupta,20.981226,79.177147
+LifeCare Hospital 763,Asthma,Pulmonologist,Dr. Rahul Mishra,13.197915,81.978466
+LifeCare Hospital 764,Heart Attack,Cardiologist,Dr. Karan Yadav,15.695837,88.838185
+Apollo Hospital 765,Skin Allergy,Dermatologist,Dr. Ravi Kumar,28.726944,75.132381
+CarePlus Hospital 766,Dengue,General Physician,Dr. Sneha Kumar,19.341282,81.056713
+LifeCare Hospital 767,Eye Infection,Ophthalmologist,Dr. Pooja Das,14.6691,73.841948
+City Hospital 768,Heart Attack,Cardiologist,Dr. Amit Kumar,31.436838,92.742463
+Apollo Hospital 769,Heart Attack,Cardiologist,Dr. Vikas Mishra,11.75025,70.193478
+Medico Hospital 770,Asthma,Pulmonologist,Dr. Ravi Das,15.617348,80.240466
+Sunrise Hospital 771,Diabetes,Endocrinologist,Dr. Priya Sharma,30.160715,79.100589
+City Hospital 772,Dengue,General Physician,Dr. Karan Verma,35.438999,89.059736
+Sunrise Hospital 773,Migraine,Neurologist,Dr. Anjali Singh,21.878535,86.191774
+City Hospital 774,Arthritis,Orthopedic,Dr. Pooja Verma,34.775419,96.246951
+Global Hospital 775,Dengue,General Physician,Dr. Rahul Das,26.603804,95.131704
+LifeCare Hospital 776,Pregnancy Care,Gynecologist,Dr. Neha Yadav,10.142689,76.297209
+LifeCare Hospital 777,Migraine,Neurologist,Dr. Sneha Das,29.862116,96.941681
+CarePlus Hospital 778,Heart Attack,Cardiologist,Dr. Karan Kumar,12.106445,94.907588
+Global Hospital 779,Diabetes,Endocrinologist,Dr. Neha Verma,35.953557,73.236639
+Apollo Hospital 780,Kidney Stone,Nephrologist,Dr. Rahul Yadav,14.53204,73.811864
+Medico Hospital 781,Skin Allergy,Dermatologist,Dr. Karan Das,36.470899,72.663389
+City Hospital 782,Arthritis,Orthopedic,Dr. Vikas Verma,28.259796,74.788655
+Global Hospital 783,Skin Allergy,Dermatologist,Dr. Rahul Gupta,28.578675,86.31461
+City Hospital 784,Diabetes,Endocrinologist,Dr. Sneha Das,17.497465,93.72618
+LifeCare Hospital 785,Arthritis,Orthopedic,Dr. Priya Verma,12.206569,73.978242
+LifeCare Hospital 786,Heart Attack,Cardiologist,Dr. Karan Sharma,8.986627,89.173979
+Sunrise Hospital 787,Heart Attack,Cardiologist,Dr. Priya Das,8.199418,83.864219
+Global Hospital 788,Pregnancy Care,Gynecologist,Dr. Karan Gupta,25.785832,81.73744
+CarePlus Hospital 789,Pregnancy Care,Gynecologist,Dr. Anjali Sharma,18.357497,95.100803
+Sunrise Hospital 790,Diabetes,Endocrinologist,Dr. Neha Verma,8.630542,73.198707
+Apollo Hospital 791,Migraine,Neurologist,Dr. Vikas Das,21.823192,91.084269
+Global Hospital 792,Asthma,Pulmonologist,Dr. Ravi Verma,31.85355,88.146943
+Apollo Hospital 793,Eye Infection,Ophthalmologist,Dr. Karan Gupta,20.655174,73.14066
+Sunrise Hospital 794,Arthritis,Orthopedic,Dr. Anjali Das,29.620326,81.999139
+Apollo Hospital 795,Eye Infection,Ophthalmologist,Dr. Anjali Verma,16.442471,88.852883
+Medico Hospital 796,Kidney Stone,Nephrologist,Dr. Pooja Gupta,24.576976,69.453801
+Medico Hospital 797,Arthritis,Orthopedic,Dr. Neha Mishra,24.074107,70.682594
+Sunrise Hospital 798,Eye Infection,Ophthalmologist,Dr. Priya Das,33.737963,74.11079
+CarePlus Hospital 799,Diabetes,Endocrinologist,Dr. Priya Mishra,14.94538,75.574654
+Global Hospital 800,Arthritis,Orthopedic,Dr. Amit Kumar,25.323352,89.362993
+City Hospital 801,Pregnancy Care,Gynecologist,Dr. Anjali Gupta,17.483201,74.641996
+Sunrise Hospital 802,Eye Infection,Ophthalmologist,Dr. Amit Kumar,10.529646,68.974046
+CarePlus Hospital 803,Asthma,Pulmonologist,Dr. Rahul Singh,28.168615,92.78669
+Global Hospital 804,Skin Allergy,Dermatologist,Dr. Amit Yadav,21.048537,82.546869
+Sunrise Hospital 805,Kidney Stone,Nephrologist,Dr. Sneha Mishra,24.747501,88.376305
+Global Hospital 806,Diabetes,Endocrinologist,Dr. Neha Gupta,35.795487,77.108528
+City Hospital 807,Dengue,General Physician,Dr. Ravi Sharma,29.775089,95.026374
+Apollo Hospital 808,Dengue,General Physician,Dr. Priya Kumar,22.448093,86.688718
+Global Hospital 809,Eye Infection,Ophthalmologist,Dr. Neha Sharma,8.061829,74.648386
+Sunrise Hospital 810,Heart Attack,Cardiologist,Dr. Amit Das,27.409759,70.223563
+Sunrise Hospital 811,Diabetes,Endocrinologist,Dr. Ravi Kumar,30.960678,81.083941
+Medico Hospital 812,Kidney Stone,Nephrologist,Dr. Anjali Verma,26.255364,78.570694
+City Hospital 813,Heart Attack,Cardiologist,Dr. Rahul Verma,24.250041,73.454995
+Global Hospital 814,Heart Attack,Cardiologist,Dr. Amit Das,34.761887,71.540199
+City Hospital 815,Pregnancy Care,Gynecologist,Dr. Vikas Gupta,26.06723,85.249025
+Global Hospital 816,Diabetes,Endocrinologist,Dr. Pooja Gupta,20.717597,68.346411
+CarePlus Hospital 817,Heart Attack,Cardiologist,Dr. Sneha Singh,12.331248,95.877294
+City Hospital 818,Diabetes,Endocrinologist,Dr. Neha Kumar,21.729728,81.714887
+City Hospital 819,Asthma,Pulmonologist,Dr. Amit Verma,36.422034,72.008816
+CarePlus Hospital 820,Migraine,Neurologist,Dr. Neha Verma,10.127693,77.890245
+Global Hospital 821,Asthma,Pulmonologist,Dr. Pooja Kumar,10.286972,87.805608
+City Hospital 822,Eye Infection,Ophthalmologist,Dr. Neha Singh,28.720666,80.852458
+Sunrise Hospital 823,Pregnancy Care,Gynecologist,Dr. Priya Gupta,21.133548,83.60503
+Medico Hospital 824,Diabetes,Endocrinologist,Dr. Pooja Singh,21.30343,81.964867
+Sunrise Hospital 825,Arthritis,Orthopedic,Dr. Karan Singh,20.428737,82.408844
+LifeCare Hospital 826,Eye Infection,Ophthalmologist,Dr. Neha Kumar,33.274644,82.74557
+City Hospital 827,Pregnancy Care,Gynecologist,Dr. Ravi Das,31.578681,82.724465
+CarePlus Hospital 828,Migraine,Neurologist,Dr. Sneha Sharma,12.333051,86.405345
+City Hospital 829,Dengue,General Physician,Dr. Neha Sharma,26.087665,76.967209
+City Hospital 830,Kidney Stone,Nephrologist,Dr. Rahul Gupta,20.38632,84.675082
+Medico Hospital 831,Pregnancy Care,Gynecologist,Dr. Karan Sharma,32.182392,91.693005
+Global Hospital 832,Pregnancy Care,Gynecologist,Dr. Karan Das,27.256381,76.824033
+CarePlus Hospital 833,Arthritis,Orthopedic,Dr. Vikas Mishra,17.701912,84.773644
+LifeCare Hospital 834,Migraine,Neurologist,Dr. Karan Gupta,25.113073,95.47356
+Medico Hospital 835,Skin Allergy,Dermatologist,Dr. Anjali Verma,8.160875,81.200622
+Global Hospital 836,Skin Allergy,Dermatologist,Dr. Vikas Mishra,23.724473,92.523599
+City Hospital 837,Arthritis,Orthopedic,Dr. Pooja Verma,32.074924,71.054185
+CarePlus Hospital 838,Pregnancy Care,Gynecologist,Dr. Anjali Verma,34.082691,87.739935
+Global Hospital 839,Asthma,Pulmonologist,Dr. Vikas Gupta,21.268038,78.728183
+Sunrise Hospital 840,Arthritis,Orthopedic,Dr. Vikas Kumar,34.826934,88.75049
+Apollo Hospital 841,Diabetes,Endocrinologist,Dr. Amit Yadav,18.053052,68.292955
+Apollo Hospital 842,Migraine,Neurologist,Dr. Vikas Das,33.640104,92.517004
+Medico Hospital 843,Asthma,Pulmonologist,Dr. Karan Gupta,18.946292,87.834828
+Medico Hospital 844,Diabetes,Endocrinologist,Dr. Sneha Singh,33.653614,74.695917
+Medico Hospital 845,Kidney Stone,Nephrologist,Dr. Pooja Gupta,30.898989,83.15752
+City Hospital 846,Eye Infection,Ophthalmologist,Dr. Karan Mishra,26.317355,76.539193
+City Hospital 847,Asthma,Pulmonologist,Dr. Anjali Gupta,20.563489,83.693329
+CarePlus Hospital 848,Arthritis,Orthopedic,Dr. Anjali Mishra,8.786712,85.71924
+City Hospital 849,Arthritis,Orthopedic,Dr. Vikas Verma,20.284123,95.924527
+LifeCare Hospital 850,Pregnancy Care,Gynecologist,Dr. Neha Kumar,31.064956,88.088972
+Sunrise Hospital 851,Kidney Stone,Nephrologist,Dr. Amit Das,29.735929,84.036812
+CarePlus Hospital 852,Pregnancy Care,Gynecologist,Dr. Ravi Mishra,35.545222,76.984267
+Apollo Hospital 853,Asthma,Pulmonologist,Dr. Priya Singh,19.608941,76.174881
+Medico Hospital 854,Asthma,Pulmonologist,Dr. Pooja Mishra,35.418428,69.562653
+CarePlus Hospital 855,Migraine,Neurologist,Dr. Sneha Sharma,30.167739,95.282058
+LifeCare Hospital 856,Kidney Stone,Nephrologist,Dr. Amit Gupta,34.061821,96.283381
+Global Hospital 857,Eye Infection,Ophthalmologist,Dr. Vikas Yadav,35.315443,82.017327
+Apollo Hospital 858,Dengue,General Physician,Dr. Priya Das,31.660225,74.210618
+Medico Hospital 859,Pregnancy Care,Gynecologist,Dr. Vikas Singh,24.338322,80.620988
+Sunrise Hospital 860,Eye Infection,Ophthalmologist,Dr. Amit Gupta,32.728816,73.147532
+City Hospital 861,Heart Attack,Cardiologist,Dr. Neha Das,8.816329,87.154548
+CarePlus Hospital 862,Asthma,Pulmonologist,Dr. Priya Mishra,27.439645,85.858163
+Medico Hospital 863,Arthritis,Orthopedic,Dr. Neha Yadav,32.516071,68.297777
+Global Hospital 864,Pregnancy Care,Gynecologist,Dr. Priya Singh,34.558929,72.55298
+CarePlus Hospital 865,Diabetes,Endocrinologist,Dr. Priya Verma,33.578877,88.519959
+LifeCare Hospital 866,Dengue,General Physician,Dr. Pooja Das,17.559589,93.856299
+Medico Hospital 867,Kidney Stone,Nephrologist,Dr. Karan Sharma,34.315508,90.544718
+CarePlus Hospital 868,Migraine,Neurologist,Dr. Ravi Sharma,21.637818,72.184801
+Apollo Hospital 869,Migraine,Neurologist,Dr. Vikas Yadav,33.945215,89.435013
+Apollo Hospital 870,Heart Attack,Cardiologist,Dr. Priya Das,34.725169,96.064148
+LifeCare Hospital 871,Skin Allergy,Dermatologist,Dr. Amit Singh,10.684808,68.286476
+LifeCare Hospital 872,Migraine,Neurologist,Dr. Ravi Yadav,34.718531,73.674639
+City Hospital 873,Asthma,Pulmonologist,Dr. Karan Kumar,14.949335,74.55343
+City Hospital 874,Skin Allergy,Dermatologist,Dr. Anjali Gupta,18.911933,82.8761
+Global Hospital 875,Pregnancy Care,Gynecologist,Dr. Rahul Verma,14.139521,72.522867
+Medico Hospital 876,Diabetes,Endocrinologist,Dr. Priya Kumar,13.916426,75.085404
+CarePlus Hospital 877,Heart Attack,Cardiologist,Dr. Rahul Das,14.680047,85.927135
+City Hospital 878,Eye Infection,Ophthalmologist,Dr. Amit Sharma,30.064084,93.559062
+CarePlus Hospital 879,Migraine,Neurologist,Dr. Sneha Kumar,14.079565,73.382763
+Medico Hospital 880,Pregnancy Care,Gynecologist,Dr. Karan Kumar,21.032731,85.991003
+LifeCare Hospital 881,Eye Infection,Ophthalmologist,Dr. Priya Verma,22.305927,70.012392
+Sunrise Hospital 882,Kidney Stone,Nephrologist,Dr. Vikas Yadav,16.136591,92.566301
+CarePlus Hospital 883,Pregnancy Care,Gynecologist,Dr. Priya Mishra,16.141618,80.037661
+Global Hospital 884,Dengue,General Physician,Dr. Karan Mishra,30.301098,88.521347
+CarePlus Hospital 885,Migraine,Neurologist,Dr. Amit Sharma,25.955281,91.595339
+Global Hospital 886,Eye Infection,Ophthalmologist,Dr. Amit Yadav,23.825193,69.593988
+CarePlus Hospital 887,Diabetes,Endocrinologist,Dr. Priya Mishra,31.559508,76.362149
+CarePlus Hospital 888,Dengue,General Physician,Dr. Amit Mishra,8.890717,86.216512
+Sunrise Hospital 889,Pregnancy Care,Gynecologist,Dr. Vikas Gupta,35.683571,77.357979
+LifeCare Hospital 890,Heart Attack,Cardiologist,Dr. Neha Singh,28.153064,81.418631
+LifeCare Hospital 891,Eye Infection,Ophthalmologist,Dr. Rahul Das,19.535497,78.315869
+CarePlus Hospital 892,Kidney Stone,Nephrologist,Dr. Priya Verma,24.212231,71.848374
+LifeCare Hospital 893,Pregnancy Care,Gynecologist,Dr. Anjali Das,36.407913,89.056752
+Sunrise Hospital 894,Heart Attack,Cardiologist,Dr. Priya Mishra,16.214179,81.917939
+City Hospital 895,Eye Infection,Ophthalmologist,Dr. Sneha Mishra,35.003732,72.400359
+CarePlus Hospital 896,Asthma,Pulmonologist,Dr. Ravi Mishra,21.864461,76.637471
+Sunrise Hospital 897,Skin Allergy,Dermatologist,Dr. Anjali Mishra,10.511386,91.30896
+LifeCare Hospital 898,Diabetes,Endocrinologist,Dr. Karan Sharma,16.306224,78.308554
+LifeCare Hospital 899,Arthritis,Orthopedic,Dr. Amit Gupta,13.567594,90.309093
+City Hospital 900,Eye Infection,Ophthalmologist,Dr. Amit Sharma,33.204889,83.876039
+City Hospital 901,Kidney Stone,Nephrologist,Dr. Ravi Singh,32.999763,75.040215
+Sunrise Hospital 902,Heart Attack,Cardiologist,Dr. Priya Mishra,19.827841,71.923953
+Global Hospital 903,Eye Infection,Ophthalmologist,Dr. Vikas Das,31.978174,72.068916
+Apollo Hospital 904,Pregnancy Care,Gynecologist,Dr. Rahul Sharma,33.617983,71.903376
+Global Hospital 905,Skin Allergy,Dermatologist,Dr. Ravi Sharma,21.536812,73.136956
+Sunrise Hospital 906,Eye Infection,Ophthalmologist,Dr. Amit Singh,16.291656,73.588878
+Apollo Hospital 907,Arthritis,Orthopedic,Dr. Sneha Gupta,28.560844,79.580078
+LifeCare Hospital 908,Pregnancy Care,Gynecologist,Dr. Anjali Kumar,17.656988,94.06588
+City Hospital 909,Diabetes,Endocrinologist,Dr. Karan Das,31.54508,84.981792
+City Hospital 910,Kidney Stone,Nephrologist,Dr. Neha Kumar,15.699982,80.357848
+Medico Hospital 911,Kidney Stone,Nephrologist,Dr. Amit Gupta,24.610023,86.05476
+Medico Hospital 912,Eye Infection,Ophthalmologist,Dr. Rahul Singh,15.010983,90.118068
+CarePlus Hospital 913,Eye Infection,Ophthalmologist,Dr. Amit Das,17.270189,79.619163
+City Hospital 914,Diabetes,Endocrinologist,Dr. Rahul Mishra,35.219358,89.225906
+CarePlus Hospital 915,Kidney Stone,Nephrologist,Dr. Pooja Gupta,20.99587,91.227461
+LifeCare Hospital 916,Asthma,Pulmonologist,Dr. Karan Mishra,26.310429,92.244802
+CarePlus Hospital 917,Skin Allergy,Dermatologist,Dr. Pooja Singh,26.620107,79.847974
+Medico Hospital 918,Arthritis,Orthopedic,Dr. Neha Verma,36.517899,74.601462
+LifeCare Hospital 919,Asthma,Pulmonologist,Dr. Pooja Yadav,32.118939,96.757241
+City Hospital 920,Arthritis,Orthopedic,Dr. Amit Sharma,28.623521,92.256112
+Global Hospital 921,Asthma,Pulmonologist,Dr. Karan Mishra,24.127483,75.828169
+Global Hospital 922,Eye Infection,Ophthalmologist,Dr. Vikas Gupta,33.826897,77.474761
+Apollo Hospital 923,Pregnancy Care,Gynecologist,Dr. Neha Das,24.763498,84.551865
+Medico Hospital 924,Dengue,General Physician,Dr. Neha Sharma,11.9121,76.704709
+City Hospital 925,Eye Infection,Ophthalmologist,Dr. Priya Singh,32.797548,89.711595
+Sunrise Hospital 926,Heart Attack,Cardiologist,Dr. Neha Gupta,25.718894,81.218064
+Sunrise Hospital 927,Migraine,Neurologist,Dr. Pooja Kumar,27.343277,81.745022
+Global Hospital 928,Dengue,General Physician,Dr. Ravi Sharma,16.164007,83.593784
+Global Hospital 929,Skin Allergy,Dermatologist,Dr. Ravi Yadav,14.928577,78.286739
+LifeCare Hospital 930,Pregnancy Care,Gynecologist,Dr. Ravi Mishra,20.031332,94.441278
+Global Hospital 931,Heart Attack,Cardiologist,Dr. Vikas Das,31.685823,95.688428
+LifeCare Hospital 932,Arthritis,Orthopedic,Dr. Anjali Das,12.95568,92.977026
+Sunrise Hospital 933,Migraine,Neurologist,Dr. Ravi Verma,16.770295,93.541481
+Medico Hospital 934,Asthma,Pulmonologist,Dr. Priya Mishra,30.124011,87.110194
+Sunrise Hospital 935,Heart Attack,Cardiologist,Dr. Anjali Mishra,28.546042,68.695433
+Global Hospital 936,Dengue,General Physician,Dr. Sneha Das,9.344876,85.000124
+Medico Hospital 937,Migraine,Neurologist,Dr. Pooja Sharma,14.186739,95.387362
+Global Hospital 938,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,29.311133,72.247611
+Sunrise Hospital 939,Pregnancy Care,Gynecologist,Dr. Rahul Gupta,28.101626,89.882951
+LifeCare Hospital 940,Arthritis,Orthopedic,Dr. Vikas Yadav,14.274319,96.471761
+Medico Hospital 941,Pregnancy Care,Gynecologist,Dr. Anjali Gupta,14.168487,92.056681
+Sunrise Hospital 942,Skin Allergy,Dermatologist,Dr. Vikas Singh,32.805558,94.068082
+Global Hospital 943,Diabetes,Endocrinologist,Dr. Neha Das,34.133145,78.308762
+LifeCare Hospital 944,Diabetes,Endocrinologist,Dr. Ravi Sharma,23.133927,69.427835
+Medico Hospital 945,Pregnancy Care,Gynecologist,Dr. Pooja Gupta,15.159168,95.158048
+CarePlus Hospital 946,Eye Infection,Ophthalmologist,Dr. Karan Singh,19.266595,81.922464
+Global Hospital 947,Kidney Stone,Nephrologist,Dr. Priya Singh,24.320034,89.759115
+Medico Hospital 948,Eye Infection,Ophthalmologist,Dr. Sneha Mishra,35.544292,75.367841
+Apollo Hospital 949,Migraine,Neurologist,Dr. Priya Verma,21.688889,84.061367
+Apollo Hospital 950,Asthma,Pulmonologist,Dr. Ravi Singh,30.82964,83.420597
+Sunrise Hospital 951,Asthma,Pulmonologist,Dr. Anjali Das,16.575285,79.797774
+Medico Hospital 952,Dengue,General Physician,Dr. Sneha Das,9.060423,75.00425
+Sunrise Hospital 953,Asthma,Pulmonologist,Dr. Pooja Das,14.443859,85.268909
+CarePlus Hospital 954,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,27.823649,74.135118
+LifeCare Hospital 955,Arthritis,Orthopedic,Dr. Amit Verma,10.54133,92.137796
+City Hospital 956,Migraine,Neurologist,Dr. Neha Singh,20.166824,95.454025
+Apollo Hospital 957,Kidney Stone,Nephrologist,Dr. Pooja Das,9.360166,78.365298
+Global Hospital 958,Eye Infection,Ophthalmologist,Dr. Vikas Mishra,13.813238,89.361005
+CarePlus Hospital 959,Asthma,Pulmonologist,Dr. Karan Kumar,34.065567,91.73732
+LifeCare Hospital 960,Migraine,Neurologist,Dr. Sneha Das,21.7902,96.531505
+Apollo Hospital 961,Pregnancy Care,Gynecologist,Dr. Anjali Verma,12.835272,86.758637
+LifeCare Hospital 962,Dengue,General Physician,Dr. Amit Das,22.778799,86.441378
+City Hospital 963,Dengue,General Physician,Dr. Amit Yadav,11.09302,85.200077
+CarePlus Hospital 964,Pregnancy Care,Gynecologist,Dr. Rahul Yadav,24.852685,95.333564
+LifeCare Hospital 965,Asthma,Pulmonologist,Dr. Ravi Yadav,16.655379,94.089054
+Global Hospital 966,Eye Infection,Ophthalmologist,Dr. Pooja Singh,20.874225,71.523104
+City Hospital 967,Eye Infection,Ophthalmologist,Dr. Priya Kumar,32.994119,94.01347
+Apollo Hospital 968,Migraine,Neurologist,Dr. Rahul Das,36.439459,70.50576
+LifeCare Hospital 969,Diabetes,Endocrinologist,Dr. Neha Yadav,14.623402,92.620024
+LifeCare Hospital 970,Eye Infection,Ophthalmologist,Dr. Ravi Mishra,25.137161,75.559197
+Global Hospital 971,Dengue,General Physician,Dr. Pooja Singh,29.725638,74.379753
+Sunrise Hospital 972,Diabetes,Endocrinologist,Dr. Vikas Mishra,33.948551,86.677168
+Medico Hospital 973,Asthma,Pulmonologist,Dr. Karan Sharma,20.176349,94.971017
+Sunrise Hospital 974,Asthma,Pulmonologist,Dr. Ravi Das,16.15643,77.571924
+City Hospital 975,Dengue,General Physician,Dr. Anjali Mishra,25.306474,88.185745
+City Hospital 976,Eye Infection,Ophthalmologist,Dr. Priya Sharma,27.803097,87.303725
+CarePlus Hospital 977,Arthritis,Orthopedic,Dr. Rahul Das,36.311429,87.244965
+Apollo Hospital 978,Migraine,Neurologist,Dr. Vikas Das,29.519198,78.061682
+LifeCare Hospital 979,Arthritis,Orthopedic,Dr. Sneha Gupta,26.245195,90.359472
+CarePlus Hospital 980,Eye Infection,Ophthalmologist,Dr. Karan Das,17.810366,79.418346
+CarePlus Hospital 981,Migraine,Neurologist,Dr. Neha Yadav,36.566951,88.846612
+CarePlus Hospital 982,Heart Attack,Cardiologist,Dr. Amit Kumar,13.784553,80.134425
+Apollo Hospital 983,Diabetes,Endocrinologist,Dr. Neha Singh,26.273727,76.797439
+LifeCare Hospital 984,Eye Infection,Ophthalmologist,Dr. Anjali Singh,27.654271,87.699473
+Apollo Hospital 985,Migraine,Neurologist,Dr. Karan Singh,31.169059,93.032064
+Medico Hospital 986,Dengue,General Physician,Dr. Vikas Mishra,20.953603,72.562522
+LifeCare Hospital 987,Migraine,Neurologist,Dr. Neha Verma,13.458354,71.336297
+Sunrise Hospital 988,Eye Infection,Ophthalmologist,Dr. Neha Sharma,20.99199,93.531034
+Sunrise Hospital 989,Heart Attack,Cardiologist,Dr. Ravi Das,8.041465,88.435409
+LifeCare Hospital 990,Eye Infection,Ophthalmologist,Dr. Priya Gupta,28.978002,78.355855
+Apollo Hospital 991,Kidney Stone,Nephrologist,Dr. Priya Singh,10.890764,68.391171
+Sunrise Hospital 992,Diabetes,Endocrinologist,Dr. Ravi Gupta,34.038539,91.481047
+CarePlus Hospital 993,Skin Allergy,Dermatologist,Dr. Amit Sharma,10.300298,93.877117
+Apollo Hospital 994,Arthritis,Orthopedic,Dr. Vikas Kumar,24.441092,95.629358
+LifeCare Hospital 995,Dengue,General Physician,Dr. Vikas Verma,8.350338,96.85468
+CarePlus Hospital 996,Migraine,Neurologist,Dr. Amit Yadav,31.946311,69.803348
+Global Hospital 997,Dengue,General Physician,Dr. Anjali Sharma,18.522274,82.519893
+LifeCare Hospital 998,Dengue,General Physician,Dr. Priya Singh,21.511665,92.610794
+Medico Hospital 999,Arthritis,Orthopedic,Dr. Ravi Das,25.212859,93.604851
+Sunrise Hospital 1000,Eye Infection,Ophthalmologist,Dr. Sneha Das,30.924226,95.1376

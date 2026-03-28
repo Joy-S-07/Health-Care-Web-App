@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import { isLoggedIn } from '../../utils/authUtils';
 
 const HeartPulseIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -13,13 +14,11 @@ const HeartPulseIcon = ({ className }) => (
 const Navbar = () => {
   const location = useLocation();
   const [hoveredPath, setHoveredPath] = useState(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    localStorage.getItem('isAuthenticated') === 'true'
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(isLoggedIn());
 
   useEffect(() => {
     const handleAuthChange = () => {
-      setIsAuthenticated(localStorage.getItem('isAuthenticated') === 'true');
+      setIsAuthenticated(isLoggedIn());
     };
     window.addEventListener('auth-change', handleAuthChange);
     return () => window.removeEventListener('auth-change', handleAuthChange);

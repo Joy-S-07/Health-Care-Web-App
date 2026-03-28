@@ -5,6 +5,7 @@ import MedicalSupport from './components/feature/medicalSupport'
 import MedicalHistory from './components/feature/medicalHistory'
 import Doctor from './components/feature/doctor'
 import Profile from './components/feature/profile'
+import HealthOnboarding from './components/HealthOnboarding'
 import Navbar from './components/feature/navbar'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -42,6 +43,7 @@ function App() {
             <Route path="/medical-support" element={<PageWrapper><MedicalSupport /></PageWrapper>} />
             <Route path="/health-history" element={<PageWrapper><MedicalHistory /></PageWrapper>} />
             <Route path="/profile" element={<PageWrapper><Profile /></PageWrapper>} />
+            <Route path="/onboarding" element={<PageWrapper><HealthOnboarding /></PageWrapper>} />
           </Routes>
         </AnimatePresence>
       </div>

@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { apiFetch, isLoggedIn } from '../../utils/authUtils';
 
 // -- Inline SVGs --
-const ArrowLeftIcon = ({ className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <line x1="19" y1="12" x2="5" y2="12"></line>
-    <polyline points="12 19 5 12 12 5"></polyline>
-  </svg>
-);
-
 const FileTextIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
@@ -41,14 +35,6 @@ const PillIcon = ({ className }) => (
   </svg>
 );
 
-const DownloadIcon = ({ className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-    <polyline points="7 10 12 15 17 10"></polyline>
-    <line x1="12" y1="15" x2="12" y2="3"></line>
-  </svg>
-);
-
 const DatabaseIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -57,160 +43,202 @@ const DatabaseIcon = ({ className }) => (
   </svg>
 );
 
-// Mock Database Records
-const MOCK_DB = {
-  consultations: [
-    { id: "C1", date: "Mar 15, 2026", doctor: "Dr. Emily Rodriguez", specialty: "Cardiologist", diagnosis: "Routine Checkup", facility: "Heart Rhythm Clinic", notes: "Blood pressure is stable. Continue current lifestyle.", status: "Completed" },
-    { id: "C2", date: "Jan 10, 2026", doctor: "Dr. Sarah Jenkins", specialty: "General Physician", diagnosis: "Viral Pharyngitis", facility: "City Health Clinic", notes: "Prescribed antibiotics. Advised rest for 3 days.", status: "Resolved" },
-    { id: "C3", date: "Nov 22, 2025", doctor: "Dr. Anita Sharma", specialty: "Dermatologist", diagnosis: "Contact Dermatitis", facility: "DermaCare Hospital", notes: "Allergic reaction. Prescribed topical steroid.", status: "Resolved" }
-  ],
-  prescriptions: [
-    { id: "P1", date: "Jan 10, 2026", medicine: "Amoxicillin 500mg", type: "Antibiotic", instructions: "1 tablet every 8 hours for 7 days", doctor: "Dr. Sarah Jenkins", status: "Completed" },
-    { id: "P2", date: "Nov 22, 2025", medicine: "Hydrocortisone Cream 1%", type: "Topical Steroid", instructions: "Apply locally twice a day", doctor: "Dr. Anita Sharma", status: "Completed" },
-    { id: "P3", date: "Ongoing", medicine: "Vitamin D3 2000 IU", type: "Supplement", instructions: "1 tablet daily after breakfast", doctor: "Self-prescribed", status: "Active" }
-  ],
-  labReports: [
-    { id: "L1", date: "Mar 12, 2026", title: "Complete Blood Count (CBC)", lab: "Metro Diagnostics", result: "Normal", doctor: "Dr. Emily Rodriguez" },
-    { id: "L2", date: "Mar 12, 2026", title: "Lipid Panel", lab: "Metro Diagnostics", result: "Slightly Elevated LDL", doctor: "Dr. Emily Rodriguez" },
-    { id: "L3", date: "Jan 09, 2026", title: "Throat Swab Culture", lab: "City Health Lab", result: "Strep Negative", doctor: "Dr. Sarah Jenkins" }
-  ]
-};
+const TrashIcon = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <polyline points="3 6 5 6 21 6"></polyline>
+    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+  </svg>
+);
 
 const MedicalHistory = () => {
-  const [activeTab, setActiveTab] = useState("consultations");
+  const [records, setRecords] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [expandedId, setExpandedId] = useState(null);
 
-  // Simulate database fetch
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1200);
-    return () => clearTimeout(timer);
+    fetchHistory();
   }, []);
+
+  const fetchHistory = async () => {
+    setIsLoading(true);
+    setError("");
+    try {
+      const data = await apiFetch('/history');
+      setRecords(data.records || []);
+    } catch (err) {
+      if (!isLoggedIn()) {
+        setError("Please log in to view your health history.");
+      } else {
+        setError("Failed to load your health history. Please try again.");
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await apiFetch(`/history/${id}`, { method: 'DELETE' });
+      setRecords(prev => prev.filter(r => r._id !== id));
+    } catch {
+      // ignore
+    }
+  };
+
+  const formatDate = (dateStr) => {
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  };
 
   return (
     <div className="flex-1 flex flex-col w-full">
 
-
       {/* Main Content */}
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 md:py-12">
         <div className="mb-8 md:mb-12">
-            <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Patient Records</h1>
+            <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Your Health History</h1>
             <p className="text-lg text-slate-600 font-medium max-w-2xl">
-              Access your complete medical history, fetched directly from your secure database records. View past visits, ongoing prescriptions, and lab test results.
+              View your past AI symptom analysis results. Each record shows the disease predicted, symptoms provided, medications suggested, and more.
             </p>
-        </div>
-
-        {/* Tabs */}
-        <div className="flex flex-wrap gap-2 mb-8 bg-white p-2 rounded-2xl shadow-sm border border-slate-200 max-w-fit">
-          <button 
-            onClick={() => setActiveTab("consultations")}
-            className={`px-6 py-2.5 rounded-xl font-bold text-sm transition-all flex items-center gap-2 ${activeTab === 'consultations' ? 'bg-amber-100 text-amber-800 shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}
-          >
-            <CalendarIcon className="w-4 h-4" /> Consultations
-          </button>
-          <button 
-            onClick={() => setActiveTab("prescriptions")}
-            className={`px-6 py-2.5 rounded-xl font-bold text-sm transition-all flex items-center gap-2 ${activeTab === 'prescriptions' ? 'bg-violet-100 text-violet-800 shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}
-          >
-            <PillIcon className="w-4 h-4" /> Prescriptions
-          </button>
-          <button 
-            onClick={() => setActiveTab("labReports")}
-            className={`px-6 py-2.5 rounded-xl font-bold text-sm transition-all flex items-center gap-2 ${activeTab === 'labReports' ? 'bg-blue-100 text-blue-800 shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'}`}
-          >
-            <ActivityIcon className="w-4 h-4" /> Lab Reports
-          </button>
         </div>
 
         {/* Content Area */}
         {isLoading ? (
           <div className="w-full py-20 flex flex-col items-center justify-center">
              <DatabaseIcon className="w-10 h-10 text-slate-300 animate-pulse mb-4" />
-             <p className="text-slate-500 font-bold tracking-widest uppercase text-sm animate-pulse">Fetching Database Records...</p>
+             <p className="text-slate-500 font-bold tracking-widest uppercase text-sm animate-pulse">Loading Your Records...</p>
+          </div>
+        ) : error ? (
+          <div className="w-full py-20 flex flex-col items-center justify-center">
+            <ActivityIcon className="w-12 h-12 text-slate-300 mb-4" />
+            <p className="text-slate-600 font-bold text-lg">{error}</p>
+            {!isLoggedIn() && (
+              <Link to="/login" className="mt-4 px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-slate-800 transition-all shadow-md">
+                Sign In
+              </Link>
+            )}
+          </div>
+        ) : records.length === 0 ? (
+          <div className="w-full py-20 flex flex-col items-center justify-center">
+            <FileTextIcon className="w-12 h-12 text-slate-300 mb-4" />
+            <h3 className="text-xl font-bold text-slate-900 mb-2">No History Yet</h3>
+            <p className="text-slate-500 font-medium text-center max-w-md">
+              Your health history will appear here after you use the Symptom Checker. Each analysis will be saved automatically.
+            </p>
+            <Link to="/symptom-checker" className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-xl font-bold text-sm hover:bg-blue-700 transition-all shadow-md">
+              Try Symptom Checker
+            </Link>
           </div>
         ) : (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            
-            {/* Consultations */}
-            {activeTab === "consultations" && (
-              <div className="space-y-4">
-                {MOCK_DB.consultations.map((item) => (
-                  <div key={item.id} className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-                        <div>
-                          <h3 className="font-bold text-xl text-slate-900">{item.diagnosis}</h3>
-                          <p className="text-slate-500 font-medium text-sm mt-1">{item.doctor} • {item.specialty}</p>
-                        </div>
-                        <div className="flex flex-col sm:items-end gap-1">
-                          <span className="text-slate-600 font-bold text-sm bg-slate-100 px-3 py-1 rounded-lg w-fit">{item.date}</span>
-                          <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded w-fit ${item.status === 'Resolved' ? 'text-emerald-600 bg-emerald-50' : 'text-amber-600 bg-amber-50'}`}>
-                            {item.status}
-                          </span>
-                        </div>
-                     </div>
-                     <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 text-sm text-slate-700 font-medium">
-                       <strong>Notes:</strong> {item.notes}
-                     </div>
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-4">
+            {records.map((record) => (
+              <div key={record._id} className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                {/* Header */}
+                <div 
+                  className="p-6 cursor-pointer"
+                  onClick={() => setExpandedId(expandedId === record._id ? null : record._id)}
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 shrink-0">
+                        <ActivityIcon className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-xl text-slate-900">{record.predictedDisease}</h3>
+                        <p className="text-slate-500 text-sm font-medium mt-1">
+                          Symptoms: {record.symptoms?.join(', ').replace(/_/g, ' ')}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-slate-600 font-bold text-sm bg-slate-100 px-3 py-1 rounded-lg flex items-center gap-1.5">
+                        <CalendarIcon className="w-3.5 h-3.5" />
+                        {formatDate(record.createdAt)}
+                      </span>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); handleDelete(record._id); }}
+                        className="p-2 text-slate-400 hover:text-rose-500 hover:bg-rose-50 rounded-lg transition-all"
+                        title="Delete record"
+                      >
+                        <TrashIcon className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
-                ))}
-              </div>
-            )}
+                </div>
 
-            {/* Prescriptions */}
-            {activeTab === "prescriptions" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {MOCK_DB.prescriptions.map((item) => (
-                  <div key={item.id} className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
-                     <div>
-                       <div className="flex justify-between items-start mb-2">
-                         <h3 className="font-bold text-lg text-slate-900">{item.medicine}</h3>
-                         <span className={`text-xs font-bold uppercase px-2 py-1 rounded-md ${item.status === 'Active' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-500'}`}>
-                           {item.status}
-                         </span>
-                       </div>
-                       <p className="text-slate-500 text-sm font-bold mb-4">{item.type}</p>
-                       <p className="bg-violet-50 text-violet-800 text-sm font-bold p-3 rounded-xl border border-violet-100">
-                         {item.instructions}
-                       </p>
-                     </div>
-                     <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500 font-bold">
-                       <span>Prescribed: {item.date}</span>
-                       <span>By: {item.doctor}</span>
-                     </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Lab Reports */}
-            {activeTab === "labReports" && (
-              <div className="space-y-4">
-                {MOCK_DB.labReports.map((item) => (
-                  <div key={item.id} className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6 hover:border-blue-200 transition-colors group">
-                     <div className="flex items-start gap-4 flex-1">
-                        <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                           <ActivityIcon className="w-6 h-6" />
+                {/* Expanded Details */}
+                {expandedId === record._id && (
+                  <div className="px-6 pb-6 pt-0 border-t border-slate-100 animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                      {/* Description */}
+                      {record.description && (
+                        <div className="md:col-span-2 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                          <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Description</p>
+                          <p className="text-slate-700 font-medium text-sm">{record.description}</p>
                         </div>
-                        <div>
-                          <h3 className="font-bold text-slate-900 text-lg">{item.title}</h3>
-                          <p className="text-slate-500 text-sm font-medium">{item.lab} • Ordered by {item.doctor}</p>
-                          <div className="mt-2 inline-block px-3 py-1 bg-slate-50 text-slate-700 text-sm font-bold rounded-lg border border-slate-200">
-                            Result: <span className={item.result === 'Normal' || item.result === 'Strep Negative' ? 'text-emerald-600' : 'text-rose-600'}>{item.result}</span>
+                      )}
+
+                      {/* Precautions */}
+                      {record.precautions?.length > 0 && (
+                        <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                          <p className="text-sm font-bold text-amber-700 uppercase tracking-wider mb-2">Precautions</p>
+                          <ul className="space-y-1.5">
+                            {record.precautions.map((p, i) => (
+                              <li key={i} className="text-sm text-amber-900 font-medium flex items-start gap-2">
+                                <span className="text-amber-500 mt-0.5">•</span> {p}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Medications */}
+                      {record.medications?.length > 0 && (
+                        <div className="bg-violet-50 rounded-xl p-4 border border-violet-100">
+                          <p className="text-sm font-bold text-violet-700 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <PillIcon className="w-3.5 h-3.5" /> Medications
+                          </p>
+                          <ul className="space-y-1.5">
+                            {record.medications.map((m, i) => (
+                              <li key={i} className="text-sm text-violet-900 font-medium flex items-start gap-2">
+                                <span className="text-violet-500 mt-0.5">•</span> {m}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Diets */}
+                      {record.diets?.length > 0 && (
+                        <div className="bg-emerald-50 rounded-xl p-4 border border-emerald-100">
+                          <p className="text-sm font-bold text-emerald-700 uppercase tracking-wider mb-2">Diet</p>
+                          <div className="flex flex-wrap gap-2">
+                            {record.diets.map((d, i) => (
+                              <span key={i} className="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-lg text-xs font-bold">{d}</span>
+                            ))}
                           </div>
                         </div>
-                     </div>
-                     <div className="flex sm:flex-col items-center sm:items-end gap-4 sm:gap-2">
-                       <span className="text-sm font-bold text-slate-500">{item.date}</span>
-                       <button className="flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-lg text-sm font-bold hover:bg-slate-800 transition-all shadow-md active:scale-95">
-                         <DownloadIcon className="w-4 h-4" /> Download
-                       </button>
-                     </div>
-                  </div>
-                ))}
-              </div>
-            )}
+                      )}
 
+                      {/* Workouts */}
+                      {record.workouts?.length > 0 && (
+                        <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
+                          <p className="text-sm font-bold text-blue-700 uppercase tracking-wider mb-2">Activities</p>
+                          <ul className="space-y-1.5">
+                            {record.workouts.slice(0, 5).map((w, i) => (
+                              <li key={i} className="text-sm text-blue-900 font-medium flex items-start gap-2">
+                                <span className="text-blue-500 mt-0.5">•</span> {w}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         )}
       </main>
